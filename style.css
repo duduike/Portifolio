@@ -1,0 +1,14 @@
+body {
+    background-image: url(img/background.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 2160px;
+    
+    }
+
+header {
+    background-image: url(img/header/background.png);
+    height: 80px;
+    
+    }    
