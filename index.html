@@ -4,41 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portifólio do Eduardo Pina, web developer | C# | .NET">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Portifólio do Eduardo Pina, Web Developer | C# | .NET">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
     <title>
-        Portifólio - Eduardo Pina
+        Eduardo Pina - Portifólio
     </title>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li>
+        <nav id="menu">
+            <img class="logoheader" src="img/header/logopbv.jpeg">
+            <div class="links ">
+                <a class="link-nav font-fira-20-500" href="" lang="en">
                     Skills
-                </li>
-                <li>
+                </a>
+                <a class="link-nav font-fira-20-500" href="">
                     Projetos
-                </li>
-                <li>
+                </a>
+                <a class="link-nav font-fira-20-500" href="">
                     Sobre
-                </li>
-                <li>
+                </a>
+                <a class="link-nav font-fira-20-500" href="">
                     Contatos
-                </li>
-            </ul>
-
+                </a>
+                <button class="button-downloadcv font-fira-20-500"> 
+                    <a href="" lang="en">Download CV </a> 
+                </button>
+            </div>
         </nav>
     </header>
 
-    <div id="principal">
-        <p>
-            Olá meu nome é Eduardo Pina estou no segundo semestre em Analise e Denvolvimento de Sistemas pela FMU e
-            criei esse portifólio para vocês conhecerem um pouco dos meus projetos.
+    <section id="background-sonic">
+        <div class="background-tittle">
+            <h1 class="font-press-400">Eduardo Pina</h1>
+            <h2 class="font-press-400">Web Developer</h2>           
+        </div>
+        <div class="button-cv-contatos">
+            <a class="red-buttons button-downloadcv-sonic font-fira-20-500" href="" lang="en">Download CV</a>
+            <a class="red-buttons button-contatos-sonic font-fira-20-500" href="">Contatos</a>
+        </div>
+    </section>
+
+    <section id="background-mario" >
+        <h1 class="headline-skills-mario font-press-400" lang="en">Skills</h1>
+        <img class="lista-skill" src="img/section-mario/lista-skill.png" alt="Simbolos html css e javascript">
+    </section>
+
+    <section id="background-projeto" >
+        <h1 class="projeto-sobre-contatos font-press-400" >Projetos</h1>
+        <a href="index.html">
+            <img class="logo-projeto" src="img/header/logopbv.jpeg" alt="">
+        </a>        
+    </section>
+
+    <section id="background-sobre">
+        <h2 class="sobre font-press-400 ">Sobre</h2>
+        <p> 
+            EM BREVE
         </p>
-    </div>
+    </section>
 
 </body>
 
