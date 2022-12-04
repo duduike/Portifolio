@@ -210,6 +210,9 @@ a::before {
 }
 
 .background-sobre{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   background-color: #003264;
   color: #FFF;
   border-bottom: 10px solid #000;
@@ -221,6 +224,7 @@ a::before {
 }
 
 .carrossel {
-  text-align: center;
-  margin: 50px 50px;
+  width: 1410px;
+  margin: 0 auto;
+  padding: 40px 0 40px 147px;
 }
