@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+
     <!-- slick slider -->
     <link
     rel="stylesheet"
@@ -55,27 +57,82 @@
         </nav>
     </header>
 
-    <div class="background-sonic">
-        <h1>Eduardo Pina Portifólio</h1>
-        <div class="background-tittle">
-            <h2 class="headline font-press-400">Eduardo Pina</h2>
-            <h2 class="font-press-400">Web Developer</h2>           
+    <section>  
+        <div class="background-sonic">
+            <h1>Eduardo Pina Portifólio</h1>
+            <div class="background-tittle">
+                <h2 class="headline font-press-400">Eduardo Pina</h2>
+                <h2 class="font-press-400">Web Developer</h2>           
+            </div>
+            <div class="button-cv-contatos">
+                <a class="red-buttons button-downloadcv-sonic font-fira-20-500" href="" lang="en">Download CV</a>
+                <a class="red-buttons button-contatos-sonic font-fira-20-500" href="">Contatos</a>
+            </div>
         </div>
-        <div class="button-cv-contatos">
-            <a class="red-buttons button-downloadcv-sonic font-fira-20-500" href="" lang="en">Download CV</a>
-            <a class="red-buttons button-contatos-sonic font-fira-20-500" href="">Contatos</a>
-        </div>
-    </div>
+    </section>  
 
-    <div id="background-mario" >
+    <section id="background-mario" >
         <h2 class="headline-skills-mario font-press-400" lang="en">Skills</h2>
-        <img class="lista-skill" src="img/section-mario/lista-skill.png" alt="Simbolos html css e javascript">
-    </div>
+        <!-- <img class="lista-skill" src="img/section-mario/lista-skill.png" alt="Simbolos html css e javascript"> -->
 
+        <div class="wrapper-skill">
+            <div class="skills">
+                <img class="icon" src="img/section-mario/skills/html.png" alt="HTML5 Icon">
+                <div class="right">
+                    <h3>HTML5</h3>
+                    <progress class="progress-bar" max="100" value="50">
+                            50%
+                    </progress>
+                </div>
+            </div>
+
+            <div class="skills">
+                <img class="icon" src="img/section-mario/skills/css.png" alt="CSS3 Icon">
+                <div class="right">
+                    <h3>CSS3</h3>
+                    <progress class="progress-bar" max="100" value="50">
+                            50%
+                    </progress>
+                </div>
+            </div>
+
+            <div class="skills">
+                <img class="icon" src="img/section-mario/skills/js.png" alt="JavaScript Icon">
+                <div class="right">
+                    <h3>JavaScript</h3>
+                    <progress class="progress-bar" max="100" value="10">
+                            10%
+                    </progress>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <img class="icon" src="img/section-mario/skills/react.png" alt="React Icon">
+                <div class="right">
+                    <h3>React</h3>
+                    <progress class="progress-bar" max="100" value="1">
+                            1%
+                    </progress>
+                </div>
+            </div>
+
+            <div class="skills">
+                <img class="icon" src="img/section-mario/skills/node.png" alt="NodeJS Icon">
+                <div class="right">
+                    <h3>NodeJS</h3>
+                    <progress class="progress-bar" max="100" value="1">
+                            1%
+                    </progress>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
     <div id="background-projeto" >
         <h2 class="headline-white font-press-400" >Projetos</h2>
         <a href="index.html">
-            <img class="logo-projeto" src="img/header/logopbv.jpeg" alt="">
+            <img class="logo-projeto" src="img/header/logopbv.jpeg" alt="Meu projeto">
         </a>        
     </div>
 
@@ -93,9 +150,11 @@
             </div>            
         </div>
 
-        <div class="font-fira-30-300"> 
-            Hoje, venho cursando análise e desenvolvimentos de sistemas pela FMU e fazendo cursos voltados a área de desenvolvimento web.
-        </div>
+        <article class="font-fira-30-300"> 
+            Em 2021 tive a oportunidade de ter meu primeiro emprego e atuei como Analista de Suporte Técnico Pleno na TDS Informática por 6 anos, em 2021 entrei na Clenea como Auxiliar de 
+            escritório  e permaneci por 1 ano onde me desliguei da empresa e decidi focar no meu objetivo de ser desenvolvedor web. Neste portifólio atualizarei todos meus aprendizados 
+            e projetos.         
+        </article>
     </div>
 
     <div class="background-contatos">
@@ -103,15 +162,21 @@
         <form>
             <div>
                 <label for="name" class="font-fira-30-300">Nome</label> <br>
-                <input type="text" size="40px">
+                <input class="form" type="text" size="40px" maxlength="50">
             </div>
+            <br>
             <div>
                 <label for="email" class="font-fira-30-300">Email</label> <br>
-                <input type="text" size="40px">
+                <input class="form" type="email" size="40px" maxlength="50">
             </div>  
+            <br>
             <div>
-                <label for="message" class="font-fira-30-300">Mensagen</label> <br>
-                <input type="text" size="40px">
+                <label for="message" class="font-fira-30-300">Mensagem</label> <br>
+                <input class="form input-message" type="text" size="40px" height="319px" maxlength="500">
+            </div>
+            <br>
+            <div>
+                <input class="submit font-fira-30-300" type="submit" value="Enviar">
             </div>
         </form>
     </div>

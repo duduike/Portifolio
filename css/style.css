@@ -171,24 +171,89 @@ a::before {
   transform: scale(1.07);
 }
 
+/* SKILLS */
 #background-mario {
   background-image: url(../img/section-mario/mario.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   border-bottom: 10px solid #490500;
-  text-align: center;
 }
 
 .headline-skills-mario {
    font-size: 40px;
    padding-top: 50px;
+   margin-bottom: 117px;
 }
 
-.lista-skill {
-  margin-top: 117px;
+.wrapper-skill{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.wrapper-skill .skills{
+  width: 430px;
+  margin-bottom: 40px;
+}
+
+.wrapper-skill .skills:nth-child(odd){
+  margin-right: 100px;
+}
+
+.wrapper-skill .progress-bar{
+  width: 320px;
+}
+
+.skills{
+  display: flex;
+  font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #000;
+}
+
+.skills .icon{
+  margin-right: 25px;
+  width: 90px;
+}
+
+.skills .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.progress-bar {
+  box-sizing: border-box;
+  height: 40px;
+  -webkit-appearance: none;
+  border: 5px solid #000;
+}
+
+.progress-bar::-moz-progress-value {
+  background-color: #4F172D;
+}
+
+.progress-bar::-moz-progress-bar {
+  background-color: #FFF;
+  border: 1px solid #000;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: #4F172D;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: #FFF;
+  border: 1px solid #000;
+}
+
+
+
+/* PROJETOS */
 #background-projeto {
   background-color: #000;
   height: 520px;
@@ -201,14 +266,7 @@ a::before {
   font-size: 40px;
 }
 
-.logo-projeto {
-  margin-top: 50px;
-  height: 280px;
-  width: 280px;
-  border: none;
-  box-shadow: 5px 5px 0 #fff;
-}
-
+/* SOBRE */
 .background-sobre{
   display: flex;
   flex-direction: column;
@@ -218,13 +276,64 @@ a::before {
   border-bottom: 10px solid #000;
 }
 
-
-.background-contatos {
-  background-color: #4F172D;
+.logo-projeto {
+  margin: 70px 0 20px 0;
+  height: 280px;
+  width: 280px;
+  border: none;
+  box-shadow: 5px 5px 0 #fff;
 }
 
 .carrossel {
   width: 1410px;
   margin: 0 auto;
   padding: 40px 0 40px 147px;
+}
+
+article {
+  width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+
+/* CONTATOS */
+.background-contatos {
+  background-color: #4F172D;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form {
+  width: 1360px;
+  height: 50px;
+  border: 5px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 300;   
+  text-decoration: none;
+}
+
+form .input-message {
+  height: 319px;
+}
+
+form .submit {
+  width: 1360px;
+  color: #FFF;
+  background-color: #000;
+  height: 60px;
+  box-shadow: 5px 5px 0px #000000;
+  border: none;
+  margin: 10px 20px 10px 20px;
+  transition: transform 100ms linear;
+  text-decoration: none;
 }
