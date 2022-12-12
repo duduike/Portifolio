@@ -1,3 +1,15 @@
+:root {
+  --cor0: #FFF;
+  --cor1: #000;
+  --cor2: #F0270B; /* BUTTON */
+  --cor3: #0085ff; /* HEADER */
+  --cor4: #3a4042; /* BACKGROUND HEADLINE */
+  --cor5: #e0a406; /* HEADLINE */
+  --cor6: #490500; /* BORDER */
+  --cor7: #4F172D; /* CONTATOS */
+  --cor8: #003264; /* SOBRE */
+}
+
 *,
 *::before,
 *::after {
@@ -14,7 +26,14 @@ h1 {
 }
 
 body {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto; */
   display: grid;
+  /* min-width: 320px;
+  max-width: 1440px; */
+  max-width: auto;
 }
 
 .font-fira-20-500 {
@@ -22,7 +41,7 @@ body {
   font-size: 20px;
   font-weight: 500;   
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--cor0);
 }
 
 .font-fira-30-300{
@@ -30,7 +49,7 @@ body {
   font-size: 30px;
   font-weight: 300;   
   text-decoration: none;
-  color: #fff;
+  color: var(--cor0);
 }
 
 .font-press-400 {
@@ -42,8 +61,8 @@ body {
 }
 
 header {
-  background-color: #0085ff;
-  border-bottom: 10px solid #000;
+  background-color: var(--cor3);
+  border-bottom: 10px solid var(--cor1);
 }
 
 #menu {
@@ -64,7 +83,7 @@ header {
 }
 
 .button-downloadcv a {
-  color: #FFFFFF;
+  color: var(--cor0);
   text-decoration: none;
 }
 
@@ -72,9 +91,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F0270B;
+  background-color: var(--cor2);
   height: 60px;
-  box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px var(--cor1);
   padding-left: 15px;
   padding-right: 20px;
   border: none;
@@ -90,12 +109,12 @@ header {
   width: 60px;
   height: 60px;
   margin: 10px 0 10px 20px;
-  border: solid #000 1px;
+  border: solid var(--cor1) 1px;
 }
 
 a::before {
   content: "";
-  background-color: #f0270b;
+  background-color: var(--cor2);
   width: 10px;
   height: 10px;
   margin-right: 10px;
@@ -107,13 +126,13 @@ a::before {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  border-bottom: 10px solid #000;
+  border-bottom: 10px solid var(--cor1);
 }
 
 .background-tittle {
   display: inline-flex;
-  background-color: #3a4042;
-  box-shadow: 10px 10px 0px #000000;
+  background-color: var(--cor4);
+  box-shadow: 10px 10px 0px var(--cor1);
   margin-left: 91px;
   margin-top: 145px;
   align-items: center;
@@ -122,15 +141,15 @@ a::before {
 
 .background-tittle .headline {
   font-size: 40px;
-  color: #e0a406;
-  text-shadow: 4px 4px 0px #000000;
+  color: var(--cor5);
+  text-shadow: 4px 4px 0px var(--cor1);
   padding: 46px 74px 26px 73px;
 }
 
 .background-tittle h2 {
-  color: #fff;
+  color: var(--cor0);
   font-size: 30px;
-  text-shadow: 4px 4px 0 #000;
+  text-shadow: 4px 4px 0 var(--cor1);
   padding-bottom: 42px;
 }
 
@@ -153,9 +172,9 @@ a::before {
 
 .red-buttons {
   width: 170px;
-  background-color: #F0270B;
+  background-color: var(--cor2);
   height: 60px;
-  box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px var(--cor1);
   border: none;
   transition: transform 100ms linear;
   text-align: center;
@@ -177,7 +196,7 @@ a::before {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  border-bottom: 10px solid #490500;
+  border-bottom: 10px solid var(--cor6);
 }
 
 .headline-skills-mario {
@@ -211,7 +230,7 @@ a::before {
   display: flex;
   font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
   font-size: 25px;
-  color: #000;
+  color: var(--cor1);
 }
 
 .skills .icon{
@@ -230,7 +249,7 @@ a::before {
   box-sizing: border-box;
   height: 40px;
   -webkit-appearance: none;
-  border: 5px solid #000;
+  border: 6px solid var(--cor1);
 }
 
 .progress-bar::-moz-progress-value {
@@ -238,8 +257,9 @@ a::before {
 }
 
 .progress-bar::-moz-progress-bar {
-  background-color: #FFF;
-  border: 1px solid #000;
+  background-color: var(--cor0);
+  border: 1px solid var(--cor1);
+  outline: 3px solid var(--cor1);
 }
 
 .progress-bar::-webkit-progress-value {
@@ -247,22 +267,23 @@ a::before {
 }
 
 .progress-bar::-webkit-progress-bar {
-  background-color: #FFF;
-  border: 1px solid #000;
+  background-color: var(--cor0);
+  border: 1px solid var(--cor1);
+  outline: 3px solid var(--cor1);
 }
 
 
 
 /* PROJETOS */
 #background-projeto {
-  background-color: #000;
+  background-color: var(--cor1);
   height: 520px;
   text-align: center;
   border-bottom: 10px solid #3a4042;
 }
 
 .headline-white {
-  color: #FFF;
+  color: var(--cor0);
   font-size: 40px;
 }
 
@@ -271,9 +292,9 @@ a::before {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: #003264;
-  color: #FFF;
-  border-bottom: 10px solid #000;
+  background-color: var(--cor8);
+  color: var(--cor0);
+  border-bottom: 10px solid var(--cor1);
 }
 
 .logo-projeto {
@@ -281,22 +302,34 @@ a::before {
   height: 280px;
   width: 280px;
   border: none;
-  box-shadow: 5px 5px 0 #fff;
+  box-shadow: 5px 5px 0 var(--cor0);
 }
 
-.arrow {
+.carousel {
+  position: relative;
+}
+
+
+.carousel .arrow {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  margin: 66px 0 50px 0;
 }
 
-.button-arrow {
-  color: #FFF;
-  background-color: #000;
+.carousel .arrow-margin{
+  margin-top: 68px;
+}
+
+.carousel .button-arrow {
+  color: var(--cor0);
+  background-color: var(--cor1);
   width: 40px;
   height: 40px;
-  box-shadow: 3px 3px 0px  #FFF;
+  box-shadow: 3px 3px 0px  var(--cor0);
   cursor: pointer;
   margin: 0 15px 0 15px;
+
 }
 
 .button-arrow .content {
@@ -310,7 +343,7 @@ a::before {
   width: 13px;
   height: 13px;
   border: 13px solid transparent;
-  border-left: 21px solid #fff;
+  border-left: 21px solid var(--cor0);
   transform: translateX(9px);
 }
 
@@ -319,7 +352,77 @@ a::before {
   
 }
 
-article {
+.carousel .node-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.carousel::after{
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  height: 5px;
+  width: calc(100% - 80px);
+  background-color: #000;
+}
+
+.carousel::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 0;
+  width: 100%;
+  border: 2.7px dashed #000;
+}
+
+.node-card::before{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 33px;
+  box-sizing: border-box;
+  border-top: 5.3px dashed var(--cor1);
+  transform: rotate(90deg) translate(-62%);
+  bottom: 135px;
+}
+
+.node-card .logo {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor0);
+  height: 140px;
+  padding: 0 20px 0 20px;
+  border: 5px solid var(--cor1);
+}
+
+.node-card .-logoclenea {
+  background-color: #B8E2F0;
+}
+
+.node-card .-logonext {
+  background-color: #7473BF;
+}
+
+.node-card .tittle {
+  font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--cor0);
+  margin-bottom: 50px;
+}
+
+.carousel .items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  transform: translateX();
+}
+
+div p {
   width: 1410px;
   margin-left: auto;
   margin-right: auto;
@@ -329,7 +432,7 @@ article {
 
 /* CONTATOS */
 .background-contatos {
-  background-color: #4F172D;
+  background-color: var(--cor7);
 }
 
 form {
@@ -342,7 +445,7 @@ form {
 .form {
   width: 1360px;
   height: 50px;
-  border: 5px solid #000;
+  border: 5px solid var(--cor1);
   margin-left: auto;
   margin-right: auto;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
@@ -357,10 +460,10 @@ form .input-message {
 
 form .submit {
   width: 1360px;
-  color: #FFF;
-  background-color: #000;
+  color: var(--cor0);
+  background-color: var(--cor1);
   height: 60px;
-  box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px var(--cor1);
   border: none;
   margin: 10px 20px 10px 20px;
   transition: transform 100ms linear;
