@@ -248,7 +248,6 @@ a::before {
 .progress-bar {
   box-sizing: border-box;
   height: 40px;
-  -webkit-appearance: none;
   border: 6px solid var(--cor1);
 }
 
@@ -271,7 +270,6 @@ a::before {
   border: 1px solid var(--cor1);
   outline: 3px solid var(--cor1);
 }
-
 
 
 /* PROJETOS */
@@ -309,7 +307,6 @@ a::before {
   position: relative;
 }
 
-
 .carousel .arrow {
   display: flex;
   align-items: center;
@@ -329,7 +326,6 @@ a::before {
   box-shadow: 3px 3px 0px  var(--cor0);
   cursor: pointer;
   margin: 0 15px 0 15px;
-
 }
 
 .button-arrow .content {
@@ -372,6 +368,7 @@ a::before {
 .carousel::before{
   content: '';
   position: absolute;
+  box-sizing: border-box;
   left: 0;
   top: 100px;
   height: 0;
@@ -416,10 +413,14 @@ a::before {
 }
 
 .carousel .items {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .elements {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
-  transform: translateX();
+  transition: transform 500ms ease-out;
 }
 
 div p {
