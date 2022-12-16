@@ -26,14 +26,9 @@ h1 {
 }
 
 body {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: auto; */
-  display: grid;
-  /* min-width: 320px;
-  max-width: 1440px; */
-  max-width: auto;
 }
 
 .font-fira-20-500 {
@@ -143,7 +138,7 @@ a::before {
   font-size: 40px;
   color: var(--cor5);
   text-shadow: 4px 4px 0px var(--cor1);
-  padding: 46px 74px 26px 73px;
+  padding: 46px 74px 10px 73px;
 }
 
 .background-tittle h2 {
@@ -424,7 +419,7 @@ a::before {
 }
 
 div p {
-  width: 1410px;
+  max-width: 1353px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
@@ -469,4 +464,40 @@ form .submit {
   margin: 10px 20px 10px 20px;
   transition: transform 100ms linear;
   text-decoration: none;
+}
+
+@media(max-width: 1440px) {
+  body {
+    width: 1200px;
+  }
+}
+
+@media(max-width: 1200px) {
+  body {
+    width: 1000px;
+  }
+}
+
+@media(max-width: 1024px) {
+  body {
+    width: 700px;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    width: 400px;
+  }
+}
+
+@media(max-width: 425px) {
+  body {
+    width: 320px;
+  }
+}
+
+@media(max-width: 320px) {
+  body {
+    width: 240px;
+  }
 }
