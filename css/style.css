@@ -63,18 +63,22 @@ header {
 #menu {
   display: flex;
   padding-bottom: 5px;
+  justify-content: space-between;
 }
 
 .links {
   display: flex;
-  margin-left: auto;
+  align-items: center;
 }
 
 .link-nav {
   display: flex;
   align-items: center;
   margin-right: 20px;
+}
 
+.link-nav:hover{
+  color: #fff;
 }
 
 .button-downloadcv a {
@@ -89,15 +93,20 @@ header {
   background-color: var(--cor2);
   height: 60px;
   box-shadow: 5px 5px 0px var(--cor1);
-  padding-left: 15px;
+  padding-left: 20px;
   padding-right: 20px;
   border: none;
-  margin: 10px 20px 10px 20px;
   transition: transform 100ms linear;
   text-decoration: none;
 }
+
+header .button-downloadcv {
+  margin-right: 20px;
+}
+
 .button-downloadcv:hover {
   transform: scale(1.07);
+  color: #FFF;
 }
 
 .logoheader {
@@ -107,7 +116,7 @@ header {
   border: solid var(--cor1) 1px;
 }
 
-a::before {
+.link-nav::before {
   content: "";
   background-color: var(--cor2);
   width: 10px;
@@ -124,14 +133,19 @@ a::before {
   border-bottom: 10px solid var(--cor1);
 }
 
-.background-tittle {
+.line-break {
   display: inline-flex;
-  background-color: var(--cor4);
-  box-shadow: 10px 10px 0px var(--cor1);
-  margin-left: 91px;
-  margin-top: 145px;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  margin: 140px 0 0 91px;
+}
+
+.background-tittle {
+    display: inline-flex;
+    background-color: var(--cor4);
+    box-shadow: 10px 10px 0px var(--cor1);
+    align-items: center;
+    flex-direction: column;
 }
 
 .background-tittle .headline {
@@ -152,11 +166,12 @@ a::before {
   display: flex;
   background: none;
   border: none;
+  gap: 112px;
+  margin-top: 38px;
 }
 
 .button-cv-contatos a {
-  padding: 17px 18px 17.43px 5px;
-  margin-top: 38px;
+  width: 172px;
 }
 
 .button-downloadcv-sonic {
@@ -164,25 +179,14 @@ a::before {
   margin-right: 112px;
 }
 
-
-.red-buttons {
-  width: 170px;
-  background-color: var(--cor2);
-  height: 60px;
-  box-shadow: 5px 5px 0px var(--cor1);
-  border: none;
-  transition: transform 100ms linear;
-  text-align: center;
-  width: 170px;
-}
-
-
 .button-downloadcv-sonic:hover {
   transform: scale(1.07);
+  color: #FFF;
 }
 
 .button-contatos-sonic:hover {
   transform: scale(1.07);
+  color: #FFF;
 }
 
 /* SKILLS */
@@ -466,7 +470,7 @@ form .submit {
   text-decoration: none;
 }
 
-@media(max-width: 1440px) {
+/* @media(max-width: 1440px) {
   body {
     width: 1200px;
   }
@@ -488,8 +492,47 @@ form .submit {
   body {
     width: 400px;
   }
-}
+} */
 
+@media screen and (max-width: 425px) {
+  body {
+    min-width: fit-content;
+    display: block;
+  }
+
+  header nav div button a {
+    display: flex;
+  }
+
+  .logoheader {
+    height: 80px;
+    width: 80px;
+  }
+
+  .button-downloadcv{
+    margin: 20px 20px 20px 20px;
+  }
+
+  .font-fira-20-500 {
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }  
+
+  .line-break{
+    margin: 130px 0 0 91px;
+  }
+
+  .button-cv-contatos{
+    gap: 0;
+    margin-top: 0;
+  }
+  
+  .button-cv-contatos a {
+    width: 239px;
+  }
+
+}
+/* 
 @media(max-width: 425px) {
   body {
     width: 320px;
@@ -500,4 +543,4 @@ form .submit {
   body {
     width: 240px;
   }
-}
+} */
