@@ -152,7 +152,7 @@ header .button-downloadcv {
   font-size: 40px;
   color: var(--cor5);
   text-shadow: 4px 4px 0px var(--cor1);
-  padding: 46px 74px 10px 73px;
+  padding: 46px 74px 0px 73px;
 }
 
 .background-tittle h2 {
