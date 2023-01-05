@@ -125,11 +125,11 @@ header .button-downloadcv {
 }
 
 .background-sonic {
-  background-image: url(../img/section-1/background-sonic.jpg);
-  background-position: bottom;
+  background-image: url(../img/section-1/background-sonic.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 818px;
+  height: 100vh;
   border-bottom: 10px solid var(--cor1);
 }
 
