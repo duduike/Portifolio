@@ -1,2 +1,5 @@
 # Portifólio
-Meu portifólio que estou desenvolvendo utilizando HTML e CSS para divulgar meus projetos.
+
+Meu portifólio tem como objetivo mostrar tudo que aprendo durante meus estudos e aprensentar meus projetos.
+
+Estou utilizando HTML, CSS e JavaScript.
