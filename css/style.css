@@ -125,11 +125,11 @@ header .button-downloadcv {
 }
 
 .background-sonic {
-  background-image: url(../img/section-1/background-sonic.png);
-  background-position: center;
+  background-image: url(../img/section-1/background-sonic.jpg);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 818px;
   border-bottom: 10px solid var(--cor1);
 }
 
@@ -194,7 +194,8 @@ header .button-downloadcv {
   background-image: url(../img/section-mario/mario425.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 923px;
+  background-position: bottom;
+  height: 1000px;
   border-bottom: 10px solid var(--cor6);
 }
 
