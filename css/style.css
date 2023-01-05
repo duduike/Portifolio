@@ -191,10 +191,10 @@ header .button-downloadcv {
 
 /* SKILLS */
 #background-mario {
-  background-image: url(../img/section-mario/mario.png);
+  background-image: url(../img/section-mario/mario425.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 923px;
   border-bottom: 10px solid var(--cor6);
 }
 
@@ -509,17 +509,39 @@ form .submit {
     width: 80px;
   }
 
+  
+  .background-sonic{
+    background-image: url(../img/section-1/sonic2.jpg);
+    background-position: bottom;
+    height: 916px;
+  }
+  
+  #background-mario {
+    background-image: url(../img/section-mario/mario425768.jpg);
+    background-position: bottom;
+    height: 1181px;
+  }
+  
   .button-downloadcv{
     margin: 20px 20px 20px 20px;
   }
-
+  
   .font-fira-20-500 {
     font-family: "Fira Code", Arial, Helvetica, sans-serif;
     font-size: 30px;
   }  
-
+  
   .line-break{
-    margin: 130px 0 0 91px;
+    display: flex;
+    margin: 130px 0 0 0px;
+  }
+
+  .background-tittle .headline {
+    font-size: 45px;   
+  }
+
+  .background-tittle h2 {
+    font-size: 35px;  
   }
 
   .button-cv-contatos{
@@ -538,9 +560,10 @@ form .submit {
     width: 320px;
   }
 }
+ */
 
 @media(max-width: 320px) {
-  body {
-    width: 240px;
-  }
-} */
+ #menu {
+  margin-right: 121px;
+ }
+}
