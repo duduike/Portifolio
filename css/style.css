@@ -129,7 +129,7 @@ header .button-downloadcv {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 960px;
   border-bottom: 10px solid var(--cor1);
 }
 
@@ -373,18 +373,18 @@ header .button-downloadcv {
   top: 100px;
   height: 0;
   width: 100%;
-  border: 2.7px dashed #000;
+  border: 2.2px dashed #000;
 }
 
 .node-card::before{
   content: '';
   position: absolute;
   height: 0;
-  width: 33px;
+  width: 54px;
   box-sizing: border-box;
-  border-top: 5.3px dashed var(--cor1);
+  border-top: 4.300000000000001px dashed var(--cor1);
   transform: rotate(90deg) translate(-62%);
-  bottom: 135px;
+  bottom: 126px;
 }
 
 .node-card .logo {
@@ -423,11 +423,11 @@ header .button-downloadcv {
   transition: transform 500ms ease-out;
 }
 
-div p {
-  max-width: 1353px;
+section p {
+  max-width: 1315px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 
@@ -466,9 +466,17 @@ form .submit {
   height: 60px;
   box-shadow: 5px 5px 0px var(--cor1);
   border: none;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 20px 72px 20px;
   transition: transform 100ms linear;
   text-decoration: none;
+}
+
+#rodape {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  gap: 40px;
+  padding: 28px 0 27px 0;
 }
 
 /* @media(max-width: 1440px) {
@@ -497,8 +505,8 @@ form .submit {
 
 @media screen and (max-width: 425px) {
   body {
-    min-width: fit-content;
-    display: block;
+    /* min-width: fit-content;
+    display: block; */
   }
 
   header nav div button a {
@@ -528,9 +536,13 @@ form .submit {
   }
   
   .font-fira-20-500 {
-    font-family: "Fira Code", Arial, Helvetica, sans-serif;
     font-size: 30px;
   }  
+  
+  .font-fira-30-300 {
+
+    font-size: 35px;
+  }
   
   .line-break{
     display: flex;
