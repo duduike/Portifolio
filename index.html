@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
     <meta name="description" content="Portifólio do Eduardo Pina, Web Developer | SQL Server">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 
+
+    <!-- BOOTSTRAP     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
     <!-- CSS -->
-<!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>
         Eduardo Pina - Portifólio
@@ -40,38 +43,36 @@
                 <a class="link-nav font-fira-20-500" href="#">
                     Contatos
                 </a>
-                <button class="button-downloadcv font-fira-20-500"> 
-                    <a href="#" lang="en">Download CV </a> 
+                <button class="button-downloadcv font-fira-20-500">
+                    <a href="#" lang="en">Download CV </a>
                 </button>
             </div>
         </nav>
     </header>
 
-    <section class="background-sonic">  
-            <h1>Eduardo Pina Portifólio</h1>
-            <div class="line-break">
-                <div class="background-tittle">
-                    <h2 class="headline font-press-400">Eduardo Pina</h2>
-                    <h2 class="font-press-400">Web Developer</h2>           
-                </div>
-                <div class="button-cv-contatos">
-                    <a class="button-downloadcv font-fira-20-500" href="#" lang="en">Download CV</a>
-                    <a class="button-downloadcv font-fira-20-500" href="#">Contatos</a>
-                </div>
-            </div>    
-    </section>  
+    <section class="background-sonic">
+        <h1>Eduardo Pina Portifólio</h1>
+        <div class="line-break">
+            <div class="background-tittle">
+                <h2 class="headline font-press-400">Eduardo Pina</h2>
+                <h2 class="font-press-400">Web Developer</h2>
+            </div>
+            <div class="button-cv-contatos">
+                <a class="button-downloadcv font-fira-20-500" href="#" lang="en">Download CV</a>
+                <a class="button-downloadcv font-fira-20-500" href="#">Contatos</a>
+            </div>
+        </div>
+    </section>
 
-    <section id="background-mario" >
+    <section id="background-mario">
         <h2 class="headline-skills-mario font-press-400" lang="en">Skills</h2>
-        <!-- <img class="lista-skill" src="img/section-mario/lista-skill.png" alt="Simbolos html css e javascript"> -->
-
         <div class="wrapper-skill">
             <div class="skills">
                 <img class="icon" src="img/section-mario/skills/html.png" alt="HTML5 Icon">
                 <div class="right">
                     <h3>HTML5</h3>
                     <progress class="progress-bar" max="100" value="50">
-                            50%
+                        50%
                     </progress>
                 </div>
             </div>
@@ -81,7 +82,7 @@
                 <div class="right">
                     <h3>CSS3</h3>
                     <progress class="progress-bar" max="100" value="50">
-                            50%
+                        50%
                     </progress>
                 </div>
             </div>
@@ -91,17 +92,17 @@
                 <div class="right">
                     <h3>JavaScript</h3>
                     <progress class="progress-bar" max="100" value="10">
-                            10%
+                        10%
                     </progress>
                 </div>
             </div>
-            
+
             <div class="skills">
                 <img class="icon" src="img/section-mario/skills/react.png" alt="React Icon">
                 <div class="right">
                     <h3>React</h3>
                     <progress class="progress-bar" max="100" value="1">
-                            1%
+                        1%
                     </progress>
                 </div>
             </div>
@@ -111,26 +112,26 @@
                 <div class="right">
                     <h3>NodeJS</h3>
                     <progress class="progress-bar" max="100" value="1">
-                            1%
+                        1%
                     </progress>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <div id="background-projeto" >
-        <h2 class="headline-white font-press-400" >Projetos</h2>
+
+    <div id="background-projeto">
+        <h2 class="headline-white font-press-400">Projetos</h2>
         <a href="index.html">
             <img class="logo-projeto" src="img/header/logopbv.jpeg" alt="Meu projeto">
-        </a>        
+        </a>
     </div>
 
-    <div class="background-sobre">
+    <section class="background-sobre">
         <div class="font-press-400">Sobre</div>
 
 
-        <section class="carousel">
+        <div class="carousel">
             <div class="arrow">
                 <div class="arrow-margin">
                     <button class="button-arrow -left"><span class="content">Esquerda</span></button>
@@ -139,23 +140,23 @@
                     <div class="elements">
                         <figure class="node-card">
                             <figcaption class="tittle">2014</figcaption>
-                            <div class="logo" >
-                                <img src="img/section-about/tdslogo.png" alt="TDS Informática Logo" >
-                            <div>
+                            <div class="logo">
+                                <img src="img/section-about/tdslogo.png" alt="TDS Informática Logo">
+                                <div>
                         </figure>
-                
+
                         <figure class="node-card">
                             <figcaption class="tittle">2021</figcaption>
-                            <div class="logo -logoclenea" >
-                                <img src="img/section-about/clenealogo.png" alt="Clenea Logo" >
-                            <div>
+                            <div class="logo -logoclenea">
+                                <img src="img/section-about/clenealogo.png" alt="Clenea Logo">
+                                <div>
                         </figure>
-                
+
                         <figure class="node-card">
                             <figcaption class="tittle">?</figcaption>
-                            <div class="logo -logonext" >
-                                <img src="img/section-about/next.png" alt="Looking for the next" >
-                            <div>
+                            <div class="logo -logonext">
+                                <img src="img/section-about/next.png" alt="Looking for the next">
+                                <div>
                         </figure>
                     </div>
                 </div>
@@ -163,15 +164,16 @@
                     <button class="button-arrow -right"><span class="content">Direita</span></button>
                 </div>
             </div>
-        </section>
-        
-        <p class="font-fira-30-300"> 
+        </div>
+
+        <p class="font-fira-30-300">
             Em 2014 conquistei meu primeiro emprego, atuei por 6 anos como analista de suporte técnico pleno na TDS
-            Informática. Em 2021 ingressei como auxiliar de escritório na Clenea, onde permaneci por um ano. Me desliguei da empresa e decidi focar no meu objetivo de ser desenvolvedor web.
-            Neste portifólio atualizarei todos meus aprendizados e projetos.         
+            Informática. Em 2021 ingressei como auxiliar de escritório na Clenea, onde permaneci por um ano. Me
+            desliguei da empresa e decidi focar no meu objetivo de ser desenvolvedor web.
+            Neste portifólio atualizarei todos meus aprendizados e projetos.
         </p>
-        
-    </div>
+
+    </section>
 
     <div class="background-contatos">
         <div class="headline-white font-press-400">Contatos</div>
@@ -184,7 +186,7 @@
             <div>
                 <label for="email" class="font-fira-30-300">Email</label> <br>
                 <input class="form" type="email" size="40px" maxlength="50">
-            </div>  
+            </div>
             <br>
             <div>
                 <label for="message" class="font-fira-30-300">Mensagem</label> <br>
@@ -197,8 +199,19 @@
         </form>
     </div>
 
+    <footer id="rodape">
+        <a href="https://web.whatsapp.com/send?phone=5511953434085" target="_blank">
+            <img src="img/footer/whatsapp.png" alt="Logo do WhatsApp">
+        </a>
+        <a href="https://www.linkedin.com/in/eduardohenriquepina/" target="_blank">
+            <img src="img/footer/linkedin.png" alt="Logo do LinkedIn">
+        </a>
+    </footer>
+
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
     <script src="js/components/main-carousel.js"></script>
 </body>
 
