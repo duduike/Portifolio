@@ -452,6 +452,10 @@ article p {
   padding: 0 4px 0 4px;
 }
 
+.main-input.-textarea{
+  height: 320px;
+}
+
 #rodape {
   display: flex;
   justify-content: center;
