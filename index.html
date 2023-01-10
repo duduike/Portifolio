@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="Portifólio do Eduardo Pina, Web Developer | SQL Server">
 
     <!-- FONT -->
@@ -166,37 +166,32 @@
             </div>
         </div>
 
-        <p class="font-fira-30-300">
-            Em 2014 conquistei meu primeiro emprego, atuei por 6 anos como analista de suporte técnico pleno na TDS
-            Informática. Em 2021 ingressei como auxiliar de escritório na Clenea, onde permaneci por um ano. Me
-            desliguei da empresa e decidi focar no meu objetivo de ser desenvolvedor web.
-            Neste portifólio atualizarei todos meus aprendizados e projetos.
-        </p>
+        <article>
+            <p class="font-fira-30-300">
+                Em 2014 conquistei meu primeiro emprego, atuei por 6 anos como analista de suporte técnico pleno na TDS
+                Informática. Em 2021 ingressei como auxiliar de escritório na Clenea, onde permaneci por um ano. Me
+                desliguei da empresa e decidi focar no meu objetivo de ser desenvolvedor web.
+                Neste portifólio atualizarei todos meus aprendizados e projetos.
+            </p>
+        </article>    
 
     </section>
 
     <div class="background-contatos">
         <div class="headline-white font-press-400">Contatos</div>
         <form>
-            <div>
-                <label for="name" class="font-fira-30-300">Nome</label> <br>
-                <input class="form" type="text" size="40px" maxlength="50">
-            </div>
-            <br>
-            <div>
-                <label for="email" class="font-fira-30-300">Email</label> <br>
-                <input class="form" type="email" size="40px" maxlength="50">
-            </div>
-            <br>
-            <div>
-                <label for="message" class="font-fira-30-300">Mensagem</label> <br>
-                <input class="form input-message" type="text" size="40px" height="319px" maxlength="500">
-            </div>
-            <br>
-            <div>
-                <input class="submit font-fira-30-300" type="submit" value="Enviar">
-            </div>
+            <label class="main-label" for="name" >Nome</label>
+            <input class="main-input" id="name" type="text">
+
+            <label class="main-label" for="email" >Email</label>
+            <input class="main-input" id="email" type="email">
+
+            <label class="main-label" for="message" >Mensagem</label>
+            <textarea class="main-input" id="message"></textarea>
+
+            <button type="submit">Enviar</button>
         </form>
+        <!-- class="font-fira-30-300" -->
     </div>
 
     <footer id="rodape">
