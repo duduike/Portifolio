@@ -456,6 +456,12 @@ article p {
   height: 320px;
 }
 
+.button-downloadcv.-full {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
 #rodape {
   display: flex;
   justify-content: center;
