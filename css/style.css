@@ -431,8 +431,23 @@ article p {
 }
 
 /* CONTATOS */
-.background-contatos {
+
+.font-press-400.-variation{
+  color: #FFF;
+  margin-bottom: 50px;
+}
+
+.main-form{
   background-color: var(--cor7);
+  padding: 50px 40px;
+}
+
+.main-form .main-input{
+  margin-bottom: 20px;
+}
+
+.main-form .main-input.-textarea {
+  margin-bottom: 40px;
 }
 
 .main-label{
@@ -460,6 +475,10 @@ article p {
   background-color: #000;
   color: #fff;
   width: 100%;
+}
+
+.button-downloadcv.-full:hover {
+  transform: scale(1.01);
 }
 
 #rodape {
