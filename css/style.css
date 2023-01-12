@@ -55,12 +55,13 @@ body {
   padding-top: 50px;
 }
 
-header {
+/* HEADER */
+.main-header {
   background-color: var(--cor3);
   border-bottom: 10px solid var(--cor1);
 }
 
-#menu {
+.menu {
   display: flex;
   padding-bottom: 5px;
   justify-content: space-between;
@@ -501,29 +502,44 @@ article p {
   }
 }
 
+*/
+
+
 @media(max-width: 1024px) {
-  body {
-    width: 700px;
+  
+  .wrapper-skill{
+    justify-content: center;
+    gap: 25px;
   }
+  
+  .wrapper-skill .skills:nth-child(odd),.wrapper-skill .skills{
+    margin: 0;
+  }
+
+  article p {
+    max-width: 742px;
+  }
+
 }
 
-@media(max-width: 768px) {
-  body {
-    width: 400px;
-  }
-} */
 
-@media screen and (max-width: 425px) {
-  body {
-    min-width: fit-content;
-  }
-  .wrapper-skill {
-    scale:(1.1);
+@media(max-width: 768px) {
+
+  #background-mario {
+    background-image: url(../img/section-mario/mario768.jpg);
   }
 
   .links{
-    padding-right: 50px;
+    display: none;
   }
+
+} 
+
+@media (max-width: 425px) {
+  body {
+    min-width: fit-content;
+  }
+
 
   .logoheader {
     height: 80px;
@@ -532,7 +548,7 @@ article p {
 
   
   .background-sonic{
-    background-image: url(../img/section-1/background-sonic\ copiar.png);
+    background-image: url(../img/section-1/bg-sonic.png);
     background-position: bottom;
     height: 916px;
   }
@@ -568,6 +584,7 @@ article p {
   .background-tittle h2 {
     font-size: 35px;  
   }
+  
 
   .button-cv-contatos{
     gap: 0;
@@ -588,7 +605,7 @@ article p {
  */
 
 @media(max-width: 320px) {
- #menu {
+ .menu {
   margin-right: 121px;
  }
 }
