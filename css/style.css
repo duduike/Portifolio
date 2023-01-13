@@ -584,8 +584,8 @@ article p {
   .main-header .icon-menu, .main-header .icon-close {
     display: none;
   }
-  
 
+  
 }
 
 @media(max-width: 768px) {
@@ -594,14 +594,10 @@ article p {
     background-image: url(../img/section-mario/mario768.jpg);
   }
 
-/* 
-  .icon-menu {
-    display:flex;
-  } */
-
 } 
 
 @media (max-width: 425px) {
+  
   body {
     min-width: fit-content;
   }
