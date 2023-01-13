@@ -71,7 +71,7 @@ body {
 }
 
 .icon-menu {
-  /* display:none; */
+  display: block;
   background-image: url(../img/header/icon-menu.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -91,6 +91,7 @@ body {
 
 .icon-close:hover{
   transform: scale(1.2);
+  color: #FFF;
 }
 
 .links {
@@ -550,12 +551,13 @@ article p {
 
 @media (max-width: 980px){
   .main-header > .menu {
+    display: none;
     position: fixed;
     background-color: #000;
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 16px;
   }
   
@@ -568,17 +570,22 @@ article p {
   }
   
   .main-header .icon-close {
+    display: none;
     position: absolute;
     top: 16px;
     right: 16px;
   }
 
+  
 }
 
 @media (min-width: 980px){
-  .main-header .icon-menu {
+
+  .main-header .icon-menu, .main-header .icon-close {
     display: none;
   }
+  
+
 }
 
 @media(max-width: 768px) {
