@@ -20,7 +20,7 @@
         elements.style = `transform: translateX(${pixels}px)`;
 
         if (pixels > totalWidth - 200) {
-            // pixels = 100 - totalWidth;
+            // pixels = 100 - totalWidth;  esse volta para o inicio mas não do jeito certo
             pixels = 0 - 100;
 
         }
@@ -30,7 +30,7 @@
         pixels = pixels - 100;
         elements.style = `transform: translateX(${pixels}px)`;
 
-        if (pixels > (totalWidth - (totalWidth - totalWidth))) {
+        if (pixels < 0) {
             pixels = 0 + 100;
         }
     })
