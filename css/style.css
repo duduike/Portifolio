@@ -388,7 +388,7 @@ header .button-downloadcv {
   position: absolute;
   left: 40px;
   top: 100px;
-  height: 5px;
+  height: 4px;
   width: calc(100% - 80px);
   background-color: #000;
 }
@@ -401,18 +401,18 @@ header .button-downloadcv {
   top: 100px;
   height: 0;
   width: 100%;
-  border: 2.2px dashed #000;
+  border: 2.24px dashed #000;
 }
 
 .node-card::before{
   content: '';
   position: absolute;
   height: 0;
-  width: 54px;
+  width: 43px;
   box-sizing: border-box;
   border-top: 4.300000000000001px dashed var(--cor1);
   transform: rotate(90deg) translate(-62%);
-  bottom: 126px;
+  bottom: 131px;
 }
 
 .node-card .logo {
@@ -449,6 +449,7 @@ header .button-downloadcv {
   display: flex;
   justify-content: space-evenly;
   transition: transform 500ms ease-out;
+  gap: 50px;
 }
 
 article p {
