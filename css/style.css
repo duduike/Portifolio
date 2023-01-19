@@ -633,6 +633,8 @@ article p {
 
   .carousel::after {
     left: 53px;
+    top: 170px;
+    height: 6.2px;
   }  
 
   article p {
@@ -769,10 +771,10 @@ article p {
   }
 
   .carousel::after {
-    top: 170.5px;
-    left: 51px;
-    height: 4.3px;
     width: 85%;
+    left: 53px;
+    top: 170px;
+    height: 6.2px;
 }
 
 article p {
