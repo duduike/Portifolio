@@ -689,11 +689,17 @@ article p {
 
   .carousel::after {
     left: 38px;
-}
+  }
 
-article p {
-  max-width: 653px;
-}
+  .carousel::after {
+    top: 170.9px;
+    height: 4.7px;
+
+    }
+
+  article p {
+    max-width: 653px;
+  }
 
 } 
 
