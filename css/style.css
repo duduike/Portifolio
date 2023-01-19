@@ -661,6 +661,7 @@ article p {
     padding: 16px;
     border-left: 5px solid #000;
     border-bottom: 5px solid #000;
+    z-index: 999;
   }
   
   .main-header .links{
@@ -686,8 +687,7 @@ article p {
   .main-header .icon-menu, .main-header .icon-close {
     display: none;
   }
-
-  
+ 
 }
 
 @media(max-width: 768px) {
