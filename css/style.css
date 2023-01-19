@@ -26,9 +26,7 @@ h1 {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
 }
 
 .font-fira-20-500 {
@@ -331,11 +329,11 @@ header .button-downloadcv {
   box-shadow: 5px 5px 0 var(--cor0);
 }
 
-.carousel {
+/* .carousel {
   position: relative;
-}
+} 
 
-.carousel .arrow {
+/* .carousel .arrow {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -422,6 +420,8 @@ header .button-downloadcv {
   height: 140px;
   padding: 0 20px 0 20px;
   border: 5px solid var(--cor1);
+  width: 220px;
+  justify-content: center;
 }
 
 .node-card .-logoclenea {
@@ -432,7 +432,7 @@ header .button-downloadcv {
   background-color: #7473BF;
 }
 
-.node-card .tittle {
+.node-card .tittle{
   font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 400;
@@ -450,7 +450,7 @@ header .button-downloadcv {
   justify-content: space-evenly;
   transition: transform 500ms ease-out;
   gap: 50px;
-}
+} */
 
 article p {
   max-width: 1075px;
@@ -458,6 +458,104 @@ article p {
   margin-right: auto;
   margin-bottom: 50px;
 }
+
+
+/* testes */
+
+.carousel {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.carousel::after{
+  content: '';
+  position: absolute;
+  left: 65px;
+  top: 171px;
+  height: 4.2px;
+  width: 90% ;
+  background-color: #000;
+}
+
+.carousel::before{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 171px;
+  height: 0;  
+  width: 100%;
+  border: 2.24px dashed #000;
+}
+
+.node-card {
+  overflow: hidden;
+}
+
+.node-card::before{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 43px;
+  box-sizing: border-box;
+  border-top: 4.300000000000001px dashed var(--cor1);
+  transform: rotate(90deg) translate(-62%);
+  bottom: 131px;
+}
+
+.card-size{
+  padding-top: 141px;
+}
+
+.tittle{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--cor0);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 140px;
+  background-color: #fff;
+  border: 5px solid #000;
+}
+
+
+.-logoclenea {
+  background-color: #B8E2F0;
+}
+
+.-logonext {
+  background-color: #7473BF;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 44px;
+  top: 80%;
+}
+
+.slick-next {
+  right: 44px;
+  top: 80%;
+}
+
+/* testes */
+
 
 /* CONTATOS */
 
@@ -518,31 +616,24 @@ article p {
   padding: 28px 0 27px 0;
 }
 
-/* @media(max-width: 1440px) {
-  body {
-    width: 1200px;
-  }
-}
-
-@media(max-width: 1200px) {
-  body {
-    width: 1000px;
-  }
-}
-
-*/
 
 
+/* RESPONSIVIDADE */
 @media(max-width: 1024px) {
   
   .wrapper-skill{
     justify-content: center;
     gap: 25px;
+    scale: 0.8;
   }
   
   .wrapper-skill .skills:nth-child(odd),.wrapper-skill .skills{
     margin: 0;
   }
+
+  .carousel::after {
+    left: 53px;
+  }  
 
   article p {
     max-width: 742px;
@@ -555,11 +646,13 @@ article p {
     display: none;
     position: fixed;
     background-color: var(--cor3);
-    width: 100%;
-    height: 100%;
+    width: 31%;
+    height: 22%;
     top: 0;
     right: 0;
     padding: 16px;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000;
   }
   
   .main-header .links{
@@ -590,19 +683,27 @@ article p {
 }
 
 @media(max-width: 768px) {
-
   #background-mario {
     background-image: url(../img/section-mario/mario768.jpg);
   }
 
+  .carousel::after {
+    left: 38px;
+}
+
+article p {
+  max-width: 653px;
+}
+
 } 
 
-@media (max-width: 425px) {
-  
-  body {
-    min-width: fit-content;
+@media (max-width: 576px){
+  body{
+    min-width: 82vh;
   }
+}
 
+@media (max-width: 425px) {
 
   .logoheader {
     height: 80px;
@@ -631,13 +732,13 @@ article p {
   }  
   
   .font-fira-30-300 {
-
-    font-size: 35px;
+    font-size: 30px;
   }
   
   .line-break{
     display: flex;
     margin: 130px 0 0 0px;
+    scale: 0.8;
   }
 
   .background-tittle .headline {
@@ -648,6 +749,9 @@ article p {
     font-size: 35px;  
   }
   
+  .carousel::after {
+    left: 39px;
+  }  
 
   .button-cv-contatos{
     gap: 0;
@@ -658,14 +762,19 @@ article p {
     width: 239px;
   }
 
+  .carousel::after {
+    top: 170.5px;
+    left: 51px;
+    height: 4.3px;
+    width: 85%;
 }
-/* 
-@media(max-width: 425px) {
-  body {
-    width: 320px;
-  }
+
+article p {
+  max-width: 572px;
 }
- */
+
+}
+
 
 @media(max-width: 320px) {
  .menu {
