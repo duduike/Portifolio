@@ -25,10 +25,6 @@ h1 {
   text-indent: -9000px;
 }
 
-body {
-
-}
-
 .font-fira-20-500 {
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -621,10 +617,12 @@ article p {
 /* RESPONSIVIDADE */
 @media(max-width: 1024px) {
   
-  .wrapper-skill{
+  .wrapper-skill {
+    position: relative;
+    bottom: 115px;
     justify-content: center;
     gap: 25px;
-    scale: 0.8;
+    scale: 0.6;
   }
   
   .wrapper-skill .skills:nth-child(odd),.wrapper-skill .skills{
@@ -701,8 +699,18 @@ article p {
     background-image: url(../img/section-mario/mario768.jpg);
   }
 
+  .wrapper-skill {
+    position: relative;
+    bottom: 65px;
+    scale: 0.5;
+  }
+
   .carousel::after {
     left: 38px;
+  }
+
+  .headline-skills-mario {
+    margin-bottom: 0;
   }
 
   .carousel::after {
@@ -746,6 +754,12 @@ article p {
     background-image: url(../img/section-mario/mario425768.jpg);
     background-position: bottom;
     height: 1181px;
+  }
+
+  .wrapper-skill {
+    position: relative;
+    top: 65px;
+    scale: 0.8;
   }
   
   .button-downloadcv{
