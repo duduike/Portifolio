@@ -1,0 +1,603 @@
+@import 'variables';
+@import 'utilities';
+@include reset;
+
+html {
+    body{
+        // CLASSES REUTILIZAVEIS
+        .main-btn{
+            @include btn-padrao;
+            @include font-fira-20-500;
+        }
+        .main-btn:hover {
+            transform: scale(1.07);
+        }
+
+        .headline-white{
+            @include font-press-400;
+            color: $white;
+            font-size: 40px;
+        }
+
+        //SLICK CAROUSEL
+        .slick-initialized .slick-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slick-prev {
+            left: 10px;
+            top: 80%;
+            color: $white;
+            background-color: $black;
+            width: 40px;
+            height: 40px;
+            box-shadow: 3px 3px 0px $white ;
+            cursor: pointer;
+            margin: 0 15px 0 15px;
+            z-index: 5;
+            @media (max-width: 1153px) {
+                left: 5px;
+            }
+        }
+
+        .slick-prev::before{
+            content: '';
+            display: block;
+            box-sizing: border-box;
+            width: 13px;
+            height: 13px;
+            border: 13px solid transparent;
+            border-right: 21px solid $white;
+            transform: translateX(-5px);
+            @media (max-width: 1153px) {
+                
+            }
+        }
+        
+        .slick-next {
+            right: 10px;
+            top: 80%;
+            color: $white;
+            background-color: $black;
+            width: 40px;
+            height: 40px;
+            box-shadow: 3px 3px 0px $white ;
+            cursor: pointer;
+            margin: 0 15px 0 15px;
+            @media (max-width: 1153px) {
+                right: 5px;
+            }
+        }
+        .slick-next::before{
+            content: '';
+            display: block;
+            box-sizing: border-box;
+            width: 13px;
+            height: 13px;
+            border: 13px solid transparent;
+            border-left: 21px solid $white;
+            transform: translateX(11px);
+            @media (max-width: 1153px) {
+               
+            }
+        }
+
+        .slick-next,.slick-prev, .slick-arrow{
+            @media (max-width: 1153px) {
+                width: 30;
+            }
+        }
+
+        .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+            color: $white;
+            outline: none;
+            background: $black;
+        }
+
+        // HEADER
+
+        .main-header{
+            display: none;
+        }
+        
+        .navbar-toggler{
+            display: block;
+            background-image: url(../img/header/icon-menu.png);
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            text-indent: -9999px;
+            width: 60px;
+            height: 60px;
+            image-rendering: pixelated;
+            border: none;
+        }
+        .navbar{
+            background-color: $bg-header;
+            border-bottom: 10px solid $black;
+
+            .logoheader{
+                width: 60px;
+                margin: 10px 0 10px 20px;
+                border: solid $black 1px;
+            }
+
+            .navbar-collapse{
+                justify-content: flex-end;
+    
+                .navbar-nav{
+                    align-items: center;
+                   
+                    ._download-header-btn {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        margin-right: 20px;
+                    }
+    
+                    .nav-link{
+                        @include font-fira-20-500;
+                        margin-right: 20px;
+                    }
+
+                    .nav-link:before {
+                        content: "";
+                        display: inline-block;
+                        background-color: $red;
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 2px;
+                      }
+                }
+            }
+        }
+
+        // SONIC SECTION
+        .background-sonic {
+            background-image: url(../img/section-1/bg-sonic.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            border-bottom: 10px solid $black;
+
+            .line-break{
+                display: flex;
+                flex-direction: column;
+                margin: 140px 0 0 0;
+                align-content: center;
+                align-items: center;
+                
+                .background-tittle{
+                    display: inline-flex;
+                    background-color: $bg-title;
+                    box-shadow: 10px 10px 0px $black;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    .headline{
+                        @include font-press-400;
+                        font-size: 40px;
+                        color: $headline;
+                        text-shadow: 4px 4px 0px $black;
+                        padding: 46px 74px 0px 73px;
+                    }
+                    
+                    .subtittle{
+                        @include font-press-400;
+                        color: $white;
+                        font-size: 30px;
+                        text-shadow: 4px 4px 0 $black;
+                        padding-bottom: 42px;
+                    }
+                }   
+                .button-cv-contatos{
+                    display: flex;
+                    background: none;
+                    border: none;
+                    gap: 112px;
+                    margin-top: 38px;
+
+                    a{
+                        width: 172px;
+                    }
+                }
+            }
+        }
+
+        //SKILLS SECTION
+        #background-mario {
+            background-image: url(../img/section-mario/mario425.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 100vh;
+            border-bottom: 10px solid $skills-border-bottom;
+
+            .headline-skills {
+                @include font-press-400;
+                font-size: 40px;
+                padding-top: 50px;
+                margin-bottom: 117px;
+            }
+            .wrapper-skill{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 960px;
+                margin: 0 auto;
+                justify-content: space-between;               
+                @include mobile1024px{
+                    position: relative;
+                    bottom: 115px;
+                    justify-content: center;
+                    gap: 25px;
+                    scale: 0.6;
+                }
+
+                .skills{
+                    display: flex;
+                    font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+                    font-size: 25px;
+                    color: $black;
+                    width: 430px;
+                    margin-bottom: 40px;
+                    @include mobile1024px{
+                        margin: 0;
+                    }
+
+                    .icon{
+                        margin-right: 25px;
+                        width: 90px;
+                    }
+                    .right{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: flex-start;
+
+                        .progress-bar{
+                            box-sizing: border-box;
+                            height: 40px;
+                            border: 6px solid $black;
+                            width: 320px;
+                        }
+                        .progress-bar::-moz-progress-value {
+                            background-color: #4F172D;
+                          }
+                          
+                          .progress-bar::-moz-progress-bar {
+                            background-color: $white;
+                            border: 1px solid $black;
+                            outline: 3px solid $black;
+                          }
+                          
+                          .progress-bar::-webkit-progress-value {
+                            background-color: #4F172D;
+                          }
+                          
+                          .progress-bar::-webkit-progress-bar {
+                            background-color: $white;
+                            border: 1px solid $black;
+                            outline: 3px solid $black;
+                          }
+                    }
+                }
+
+                .skills:nth-child(odd){
+                    @include mobile1024px{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        //PROJETOS SECTION
+        #background-projeto{
+            background-color: $black;
+            height: 90vh;
+            text-align: center;
+            border-bottom: 10px solid #3a4042;
+
+
+            .project-one{
+                width: 281px;
+                margin: 0 auto;
+
+                a {
+                    .meu-portifolio {
+                        background-size: auto;
+                        height: 280px;
+                        width: 280px;
+                        margin: 70px 0 20px 0;
+                        border: none;
+                        box-shadow: 5px 5px 0 $white;
+                    }
+                }
+    
+                legend, p {
+                    @include font-fira-30-300;
+                }
+
+                legend{
+                    color: $bg-header;
+                }
+    
+                p {
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        //ABOUT ME SECTION
+        .background-sobre {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            background-color: $bg-sobre;
+            color: $white;
+            border-bottom: 10px solid $black;
+            
+            .carousel {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+
+
+                .node-card{
+                    overflow: hidden;
+                    
+                    .card-size{
+                        padding-top: 141px;
+
+                        .tittle{
+                            display: flex;
+                            justify-content: center;
+                            padding-bottom: 50px;
+                            font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
+                            font-size: 25px;
+                            font-weight: 400;
+                            color: $white;
+                        }
+                        .logo{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 220px;
+                            height: 140px;
+                            background-color: $white;
+                            border: 5px solid $black;
+                        }
+                        ._logoclenea{
+                            background-color: #B8E2F0;
+                        }
+                        ._logonext{
+                            background-color: #7473BF
+                        }
+                    }
+                }
+
+                .node-card::before{
+                    content: '';
+                    position: absolute;
+                    height: 0;
+                    width: 43px;
+                    box-sizing: border-box;
+                    border-top: 4.300000000000001px dashed $black;
+                    transform: rotate(90deg) translate(-62%);
+                    bottom: 131px;
+                  }
+            }
+
+            .carousel::after{
+                content: '';
+                position: absolute;
+                left: 65px;
+                top: 171px;
+                height: 4.2px;
+                width: 90% ;
+                background-color: $black;
+                @include mobile1024px{
+                    left: 53px;
+                    top: 170px;
+                    height: 6.2px;
+                }
+            }
+
+            .carousel::before{
+                content: '';
+                position: absolute;
+                box-sizing: border-box;
+                left: 0;
+                top: 171px;
+                height: 0;  
+                width: 100%;
+                border: 2.24px dashed $black;
+            }
+
+            article {
+                p{
+                    @include font-fira-30-300;
+                    max-width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        //CONTACTS SECTION
+        .main-form {
+            background-color: $bg-contatos;
+            padding: 50px 40px;
+
+            #variation-font{
+                @include font-press-400;
+                color: $white;
+            }
+            .main-label{
+                color: $white;
+                font-family: "Fira Code", Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 40px;
+            }
+            .main-input {
+                margin-bottom: 20px;
+                border: 5px solid $black;
+                font-size: 30px;
+                width: 100%;
+                height: 50px;
+                box-sizing: border-box;
+                padding: 0 4px 0 4px;
+            }
+
+            ._textarea{
+                margin-bottom: 40px;
+                height: 320px;
+            }
+
+            ._btn-black{
+                background-color: $black;
+                color: $white;
+                width: 100%;
+                @include font-fira-30-300;
+            }
+            ._btn-black:hover{
+                transform: scale(1.01);
+            }
+        }
+
+        //FOOTER
+        #rodape{
+            display: flex;
+            justify-content: center;
+            background-color: $black;
+            gap: 40px;
+            padding: 20px 0 20px 0;
+        }
+
+
+        @media(max-width: 768px) {
+            .line-break {
+              display: flex;
+              margin: 130px 0 0 0px;
+              scale: 0.8;
+              transition: ease-in-out 500ms;
+            }
+          
+            #background-mario {
+              background-image: url(../img/section-mario/mario768.jpg);
+            }
+          
+            .wrapper-skill {
+              position: relative;
+              bottom: 65px;
+              scale: 0.5;
+              transition: ease-in-out 500ms;
+            }
+          
+            .carousel::after {
+              left: 38px;
+            }
+          
+            .headline-skills-mario {
+              margin-bottom: 0;
+            }
+          
+            .carousel::after {
+              top: 170.9px;
+              height: 4.7px;
+          
+              }
+          
+            article p {
+              max-width: 653px;
+            }
+          
+        } 
+
+        @media (max-width: 576px){
+            body{
+              min-width: 82vh;
+            }
+          
+        }
+          
+        @media (max-width: 425px) {           
+            .background-sonic{
+              background-image: url(../img/section-1/bg-sonic.png);
+              background-position: bottom;
+              height: 916px;
+            }
+            
+            #background-mario {
+              background-image: url(../img/section-mario/mario425768.jpg);
+              background-position: bottom;
+              height: 1181px;
+            }
+          
+            .wrapper-skill {
+              position: relative;
+              top: 65px;
+              scale: 0.8;
+              transition: ease-in-out 500ms;
+            }
+            
+            .button-downloadcv{
+              margin: 20px 20px 20px 20px;
+            }
+            
+            .font-fira-20-500 {
+              font-size: 30px;
+            }  
+            
+            .font-fira-30-300 {
+              font-size: 30px;
+            }
+            
+            .line-break{
+              display: flex;
+              margin: 130px 0 0 0px;
+              scale: 0.8;
+              transition: ease-in-out 500ms;
+            }
+          
+            .background-tittle .headline {
+              font-size: 45px;   
+            }
+          
+            .background-tittle h2 {
+              font-size: 35px;  
+            }
+            
+            .carousel::after {
+              left: 39px;
+            }  
+          
+            .button-cv-contatos{
+              gap: 0;
+              margin-top: 0;
+            }
+            
+            .button-cv-contatos a {
+              width: 239px;
+            }
+          
+            .carousel::after {
+              width: 85%;
+              left: 53px;
+              top: 170px;
+              height: 6.2px;
+          }
+          
+          article p {
+            max-width: 572px;
+          }
+          
+        }
+          
+    }
+}

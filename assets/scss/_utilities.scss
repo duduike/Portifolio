@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap');
+@mixin reset {
+    *,
+    *::before,
+    *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    
+    // html{
+    //     font-size: 6.25%;
+    // }
+
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    h1 {
+        font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
+        text-indent: -9000px;
+      }
+}
+
+@mixin font-fira-20-500 {
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;   
+    text-decoration: none;
+    color: $white;
+}
+
+@mixin font-fira-30-300 {
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 300;   
+    text-decoration: none;
+    color: $white;
+}
+
+@mixin font-press-400 {
+    font-family: 'Press Start 2P', cursive, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@mixin btn-padrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    box-shadow: 5px 5px 0px $black;
+    border: none;
+    transition: transform 100ms linear;
+    text-decoration: none;
+    background-color: $red;
+    a{
+        color: $white;
+    }
+}
+
+@mixin mobile1024px {
+    @media(max-width: 1024px) {
+  
+        @content
+      
+      }
+}
+
