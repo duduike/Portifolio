@@ -120,9 +120,6 @@ html body .slick-prev:hover, html body .slick-prev:focus, html body .slick-next:
   outline: none;
   background: #000;
 }
-html body .main-header {
-  display: none;
-}
 html body .navbar-toggler {
   display: block;
   background-image: url(../img/header/icon-menu.png);
