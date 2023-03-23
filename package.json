@@ -1,0 +1,20 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "Meu portfólio tem como objetivo mostrar tudo que aprendo durante meus estudos e aprensentar meus projetos.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/scss/styles.scss:assets/scss/dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duduike/Portifolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duduike/Portifolio/issues"
+  },
+  "homepage": "https://github.com/duduike/Portifolio#readme"
+}

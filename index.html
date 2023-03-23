@@ -3,96 +3,87 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1">
-    <meta name="description" content="Portifólio do Eduardo Pina, Web Developer | SQL Server">
+    <meta name="viewport" content="width=device-width, maximum-scale=0.8">
+    <meta name="description" content="Eduardo Pina | Front-End">
+    <title>
+        Eduardo Pina - Portifólio
+    </title>
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
-    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- SLICK    -->
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
     
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>
-        Eduardo Pina - Portifólio
-    </title>
+    <link rel="stylesheet" type="text/css" href="assets/scss/dist/styles.css">
 </head>
 
 <body>
-
-    <header class="main-header">
-        <img class="logoheader" src="img/header/logopbv.jpeg">
-        
-        
-        <nav id="menu" class="menu">
-            <div class="links ">
-                <a class="link-nav font-fira-20-500" href="#background-mario" lang="en">
-                    Skills
-                </a>
-                <a class="link-nav font-fira-20-500" href="#background-projeto">
-                    Projetos
-                </a>
-                <a class="link-nav font-fira-20-500" href="#section3">
-                    Sobre
-                </a>
-                <a class="link-nav font-fira-20-500" href="#section4">
-                    Contatos
-                </a>
-                <button class="button-downloadcv font-fira-20-500">
-                    <a href="https://drive.google.com/uc?export=download&id=1gIQvU3V_4dkUhGMVWE_khFFspSk9Yxaj" lang="en">Download CV </a>
-                </button>
-
-                <a class="icon-close" href="#menu">X</a>
+    <!-- NEW HEADER -->
+    <header>
+        <nav id="menu" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img class="logoheader img-fluid" src="assets/img/header/logopbv.jpeg">
+              <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#background-mario" lang="en">Skills</a>
+                  <a class="nav-link" href="#background-projeto">Projetos</a>
+                  <a class="nav-link" href="#section3">Sobre</a>
+                  <a class="nav-link" href="#section4">Contatos</a>
+                  <a class="main-btn _download-header-btn" href="https://drive.google.com/uc?export=download&id=1gIQvU3V_4dkUhGMVWE_khFFspSk9Yxaj" lang="en">Download CV </a>
+                </div>
+              </div>
             </div>
         </nav>
-        <a href="#menu" class="icon-menu">Abrir menu</a>
     </header>
 
+
+    <!-- SONIC SECTION -->
     <section class="background-sonic">
         <h1>Eduardo Pina Portifólio</h1>
         <div class="line-break">
             <div class="background-tittle">
-                <h2 class="headline font-press-400">Eduardo Pina</h2>
-                <h2 class="font-press-400">Web Developer</h2>
+                <h2 class="headline">Eduardo Pina</h2>
+                <h2 class="subtittle">Front-End</h2>
             </div>
             <div class="button-cv-contatos">
-                <a class="button-downloadcv font-fira-20-500" href="https://drive.google.com/uc?export=download&id=1gIQvU3V_4dkUhGMVWE_khFFspSk9Yxaj" lang="en">Download CV</a>
-                <a class="button-downloadcv font-fira-20-500" href="#section4">Contatos</a>
+                <a class="main-btn" href="https://drive.google.com/uc?export=download&id=1gIQvU3V_4dkUhGMVWE_khFFspSk9Yxaj" lang="en">Download CV</a>
+                <a class="main-btn" href="#section4">Contatos</a>
             </div>
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
     <section id="background-mario">
-        <h2 class="headline-skills-mario font-press-400" lang="en">Skills</h2>
+        <h2 class="headline-skills" lang="en">Skills</h2>
         <div class="wrapper-skill">
             <div class="skills">
-                <img class="icon" src="img/section-mario/skills/html.png" alt="HTML5 Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/html.png" alt="HTML5 Icon">
                 <div class="right">
                     <h3>HTML5</h3>
-                    <progress class="progress-bar" max="100" value="50">
-                        50%
+                    <progress class="progress-bar" max="100" value="70">
+                        70%
                     </progress>
                 </div>
             </div>
 
             <div class="skills">
-                <img class="icon" src="img/section-mario/skills/css.png" alt="CSS3 Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/css.png" alt="CSS3 Icon">
                 <div class="right">
                     <h3>CSS3</h3>
-                    <progress class="progress-bar" max="100" value="50">
-                        50%
+                    <progress class="progress-bar" max="100" value="60">
+                        60%
                     </progress>
                 </div>
             </div>
 
             <div class="skills">
-                <img class="icon" src="img/section-mario/skills/js.png" alt="JavaScript Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/js.png" alt="JavaScript Icon">
                 <div class="right">
                     <h3>JavaScript</h3>
                     <progress class="progress-bar" max="100" value="10">
@@ -102,7 +93,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="img/section-mario/skills/react.png" alt="React Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/react.png" alt="React Icon">
                 <div class="right">
                     <h3>React</h3>
                     <progress class="progress-bar" max="100" value="1">
@@ -112,7 +103,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="img/section-mario/skills/node.png" alt="NodeJS Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/node.png" alt="NodeJS Icon">
                 <div class="right">
                     <h3>NodeJS</h3>
                     <progress class="progress-bar" max="100" value="1">
@@ -120,79 +111,56 @@
                     </progress>
                 </div>
             </div>
+
+            <div class="skills">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/sass.png" alt="Sass Icon">
+                <div class="right">
+                    <h3>Sass</h3>
+                    <progress class="progress-bar" max="100" value="80">
+                        80%
+                    </progress>
+                </div>
+            </div>
         </div>
     </section>
 
-
+    <!-- PROJETOS SECTION -->
     <div id="background-projeto">
-        <h2 class="headline-white font-press-400">Projetos</h2>
-        <a href="index.html">
-            <img class="logo-projeto" src="img/header/logopbv.jpeg" alt="Meu projeto">
-        </a>
-        <p class="font-fira-30-300">Meu Portifólio</p>
+        <h2 class="headline-white">Projetos</h2>
+        <div class="project-one">
+            <a href="index.html">
+                <img class="meu-portifolio img-fluid" src="assets/img/section-1/logopbv280px.jpg" alt="Meu projeto">
+            </a>
+            <legend>Meu Portifólio</legend>
+            <p>Foi meu primeiro projeto que desenvolvi utilizando: HTML5, CSS3, JavaScript, SCSS e Bootstrap</p>
+        </div>
     </div>
 
     <section id="section3" class="background-sobre">
-        <div class="font-press-400">Sobre</div>
-
-
-        <!-- <div class="carousel">
-            <div class="arrow">
-                <div class="arrow-margin">
-                    <button class="button-arrow -left"><span class="content">Esquerda</span></button>
-                </div>
-                <div class="items">
-                    <div class="elements">
-                        <div class="node-card">
-                            <figcaption class="tittle">2014</figcaption>
-                            <div class="logo">
-                                <img src="img/section-about/tdslogo.png" alt="TDS Informática Logo">
-                                <div>
-                        </div>
-
-                        <div class="node-card">
-                            <div class="tittle">2021</div>
-                            <div class="logo -logoclenea">
-                                <img src="img/section-about/clenealogo.png" alt="Clenea Logo">
-                                <div>
-                        </div>
-
-                        <div class="node-card">
-                            <div class="tittle">?</div>
-                            <div class="logo -logonext">
-                                <img src="img/section-about/next.png" alt="Looking for the next">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="arrow-margin">
-                    <button class="button-arrow -right"><span class="content">Direita</span></button>
-                </div>
-            </div>
-        </div> -->
-    
+        <h2 class="headline-white">Sobre</h2>
+        <div class="line"></div>
         <div class="carousel">
             <div class="node-card">
                 <div class="card-size">
                     <div class="tittle">2014</div>
                     <div class="logo">
-                        <img src="img/section-about/tdslogo.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/tdslogo.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="node-card">
                 <div class="card-size">
                     <div class="tittle">2021</div>
-                    <div class="logo -logoclenea">
-                        <img src="img/section-about/clenealogo.png" alt="">
+                    <div class="logo _logoclenea">
+                        <img class="img-fluid" src="assets/img/section-about/clenealogo.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="node-card">
                 <div class="card-size">
                     <div class="tittle">?</div>
-                    <div class="logo -logonext">
-                        <img src="img/section-about/next.png" alt="">
+                    <div class="logo _logonext">
+                        <img class="img-fluid" src="assets/img/section-about/next.png" alt="">
                     </div>
                 </div>    
             </div>
@@ -200,23 +168,23 @@
                 <div class="card-size">
                     <div class="tittle">2014</div>
                     <div class="logo">
-                        <img src="img/section-about/tdslogo.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/tdslogo.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="node-card">
                 <div class="card-size">
                     <div class="tittle">2021</div>
-                    <div class="logo -logoclenea">
-                        <img src="img/section-about/clenealogo.png" alt="">
+                    <div class="logo _logoclenea">
+                        <img class="img-fluid" src="assets/img/section-about/clenealogo.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="node-card">
                 <div class="card-size">
                     <div class="tittle">?</div>
-                    <div class="logo -logonext">
-                        <img src="img/section-about/next.png" alt="">
+                    <div class="logo _logonext">
+                        <img class="img-fluid" src="assets/img/section-about/next.png" alt="">
                     </div>
                 </div>    
             </div>
@@ -233,40 +201,46 @@
 
     </section>
 
-
-    <form name="contact" id="section4" class="main-form" method="POST" data-netlify="true">
-        <legend class="font-press-400 -variation">Contatos</legend>
-
-        <label class="main-label" for="name">Nome</label>
-        <input class="main-input" id="name" type="text" required>
-
-        <label class="main-label" for="email">Email</label>
-        <input class="main-input" id="email" type="email" required>
-
-        <label class="main-label" for="message">Mensagem</label>
-        <textarea class="main-input -textarea" id="message" required></textarea>
-
-        <button class="button-downloadcv -full font-fira-30-300" type="submit">Enviar</button>
-    </form>
+    <div id="form">
+        <form name="contact" id="section4" class="main-form" method="POST" data-netlify="true" onSubmit="submit">
+            <legend id="variation-font">Contatos</legend>
+    
+            <label class="main-label" for="name">Nome</label>
+            <input class="main-input" id="name" type="text" name="name" required>
+    
+            <label class="main-label" for="email">Email</label>
+            <input class="main-input" id="email" type="email" name="email" required>
+    
+            <label class="main-label" for="message">Mensagem</label>
+            <textarea class="main-input _textarea" id="message" name="message" required></textarea>
+    
+            <button class="main-btn _btn-black" type="submit">Enviar</button>
+        </form>
+    </div>
 
 
     <footer id="rodape">
         <a href="https://wa.me/5511915794212" target="_blank">
-            <img src="img/footer/whatsapp.png" alt="Logo do WhatsApp">
+            <img class="img-fluid" src="assets/img/footer/whatsapp.png" alt="Logo do WhatsApp">
         </a>
         <a href="https://www.linkedin.com/in/eduardohenriquepina/" target="_blank">
-            <img src="img/footer/linkedin.png" alt="Logo do LinkedIn">
+            <img class="img-fluid" src="assets/img/footer/linkedin.png" alt="Logo do LinkedIn">
         </a>
         <a href="https://github.com/duduike" target="_blank">
-            <img src="img/footer/github.png" alt="Logo do GitHub">
+            <img class="img-fluid" src="assets/img/footer/github.png" alt="Logo do GitHub">
         </a>
     </footer>
 
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- SLICK CAROUSEL -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 
-    <script src="js/components/main.js"></script>
+    <!-- MY SCRIPT -->
+    <script src="assets/scripts/dist/app.dev.js"></script>
 
 </body>
 
