@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=0.8">
     <meta name="description" content="Eduardo Pina | Front-End">
     <title>
         Eduardo Pina - Portifólio
@@ -18,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
     
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/scss/dist/styles.css">
 </head>
 
 <body>
@@ -26,7 +25,7 @@
     <header>
         <nav id="menu" class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img class="logoheader" src="assets/img/header/logopbv.jpeg">
+                <img class="logoheader img-fluid" src="assets/img/header/logopbv.jpeg">
               <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,37 +41,7 @@
             </div>
         </nav>
     </header>
-    
 
-    <!-- HEADER ANTIGO -->
-    <header class="main-header">
-        <img class="logoheader" src="assets/img/header/logopbv.jpeg" width="10px">
-        
-        
-        <nav id="menu" class="menu">
-            <div class="links ">
-                <a class="link-nav" href="#background-mario" lang="en">
-                    Skills
-                </a>
-                <a class="link-nav" href="#background-projeto">
-                    Projetos
-                </a>
-                <a class="link-nav" href="#section3">
-                    Sobre
-                </a>
-                <a class="link-nav" href="#section4">
-                    Contatos
-                </a>
-                <button class="main-btn _download-header-btn">
-                    <a href="https://drive.google.com/uc?export=download&id=1gIQvU3V_4dkUhGMVWE_khFFspSk9Yxaj" lang="en">Download CV </a>
-                </button>
-                
-                <a class="icon-close" href="#menu">X</a>
-            </div>
-        </nav>
-        <a href="#menu" class="icon-menu">Abrir menu</a>
-    </header>
-    
 
     <!-- SONIC SECTION -->
     <section class="background-sonic">
@@ -80,7 +49,7 @@
         <div class="line-break">
             <div class="background-tittle">
                 <h2 class="headline">Eduardo Pina</h2>
-                <h2 class="subtittle">Web Developer</h2>
+                <h2 class="subtittle">Front-End</h2>
             </div>
             <div class="button-cv-contatos">
                 <a class="main-btn" href="https://drive.google.com/uc?export=download&id=1gIQvU3V_4dkUhGMVWE_khFFspSk9Yxaj" lang="en">Download CV</a>
@@ -94,7 +63,7 @@
         <h2 class="headline-skills" lang="en">Skills</h2>
         <div class="wrapper-skill">
             <div class="skills">
-                <img class="icon" src="assets/img/section-mario/skills/html.png" alt="HTML5 Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/html.png" alt="HTML5 Icon">
                 <div class="right">
                     <h3>HTML5</h3>
                     <progress class="progress-bar" max="100" value="70">
@@ -104,7 +73,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="assets/img/section-mario/skills/css.png" alt="CSS3 Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/css.png" alt="CSS3 Icon">
                 <div class="right">
                     <h3>CSS3</h3>
                     <progress class="progress-bar" max="100" value="60">
@@ -114,7 +83,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="assets/img/section-mario/skills/js.png" alt="JavaScript Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/js.png" alt="JavaScript Icon">
                 <div class="right">
                     <h3>JavaScript</h3>
                     <progress class="progress-bar" max="100" value="10">
@@ -124,7 +93,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="assets/img/section-mario/skills/react.png" alt="React Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/react.png" alt="React Icon">
                 <div class="right">
                     <h3>React</h3>
                     <progress class="progress-bar" max="100" value="1">
@@ -134,7 +103,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="assets/img/section-mario/skills/node.png" alt="NodeJS Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/node.png" alt="NodeJS Icon">
                 <div class="right">
                     <h3>NodeJS</h3>
                     <progress class="progress-bar" max="100" value="1">
@@ -144,7 +113,7 @@
             </div>
 
             <div class="skills">
-                <img class="icon" src="assets/img/section-mario/skills/sass.png" alt="Sass Icon">
+                <img class="icon img-fluid" src="assets/img/section-mario/skills/sass.png" alt="Sass Icon">
                 <div class="right">
                     <h3>Sass</h3>
                     <progress class="progress-bar" max="100" value="80">
@@ -160,58 +129,22 @@
         <h2 class="headline-white">Projetos</h2>
         <div class="project-one">
             <a href="index.html">
-                <img class="meu-portifolio" src="assets/img/section-1/logopbv280px.jpg" alt="Meu projeto">
+                <img class="meu-portifolio img-fluid" src="assets/img/section-1/logopbv280px.jpg" alt="Meu projeto">
             </a>
             <legend>Meu Portifólio</legend>
-            <p>Esse foi meu primeiro projeto que desenvolvi utilizando: HTML5, CSS3, JavaScript, SCSS e Bootstrap</p>
+            <p>Foi meu primeiro projeto que desenvolvi utilizando: HTML5, CSS3, JavaScript, SCSS e Bootstrap</p>
         </div>
     </div>
 
     <section id="section3" class="background-sobre">
         <h2 class="headline-white">Sobre</h2>
-
-
-        <!-- <div class="carousel">
-            <div class="arrow">
-                <div class="arrow-margin">
-                    <button class="button-arrow -left"><span class="content">Esquerda</span></button>
-                </div>
-                <div class="items">
-                    <div class="elements">
-                        <div class="node-card">
-                            <figcaption class="tittle">2014</figcaption>
-                            <div class="logo">
-                                <img src="img/section-about/tdslogo.png" alt="TDS Informática Logo">
-                                <div>
-                        </div>
-
-                        <div class="node-card">
-                            <div class="tittle">2021</div>
-                            <div class="logo -logoclenea">
-                                <img src="img/section-about/clenealogo.png" alt="Clenea Logo">
-                                <div>
-                        </div>
-
-                        <div class="node-card">
-                            <div class="tittle">?</div>
-                            <div class="logo -logonext">
-                                <img src="img/section-about/next.png" alt="Looking for the next">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="arrow-margin">
-                    <button class="button-arrow -right"><span class="content">Direita</span></button>
-                </div>
-            </div>
-        </div> -->
-    
+        <div class="line"></div>
         <div class="carousel">
             <div class="node-card">
                 <div class="card-size">
                     <div class="tittle">2014</div>
                     <div class="logo">
-                        <img src="assets/img/section-about/tdslogo.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/tdslogo.png" alt="">
                     </div>
                 </div>
             </div>
@@ -219,7 +152,7 @@
                 <div class="card-size">
                     <div class="tittle">2021</div>
                     <div class="logo _logoclenea">
-                        <img src="assets/img/section-about/clenealogo.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/clenealogo.png" alt="">
                     </div>
                 </div>
             </div>
@@ -227,7 +160,7 @@
                 <div class="card-size">
                     <div class="tittle">?</div>
                     <div class="logo _logonext">
-                        <img src="assets/img/section-about/next.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/next.png" alt="">
                     </div>
                 </div>    
             </div>
@@ -235,7 +168,7 @@
                 <div class="card-size">
                     <div class="tittle">2014</div>
                     <div class="logo">
-                        <img src="assets/img/section-about/tdslogo.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/tdslogo.png" alt="">
                     </div>
                 </div>
             </div>
@@ -243,7 +176,7 @@
                 <div class="card-size">
                     <div class="tittle">2021</div>
                     <div class="logo _logoclenea">
-                        <img src="assets/img/section-about/clenealogo.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/clenealogo.png" alt="">
                     </div>
                 </div>
             </div>
@@ -251,7 +184,7 @@
                 <div class="card-size">
                     <div class="tittle">?</div>
                     <div class="logo _logonext">
-                        <img src="assets/img/section-about/next.png" alt="">
+                        <img class="img-fluid" src="assets/img/section-about/next.png" alt="">
                     </div>
                 </div>    
             </div>
@@ -268,32 +201,33 @@
 
     </section>
 
-
-    <form name="contact" id="section4" class="main-form" method="POST" data-netlify="true" onSubmit="submit">
-        <legend id="variation-font">Contatos</legend>
-
-        <label class="main-label" for="name">Nome</label>
-        <input class="main-input" id="name" type="text" name="name" required>
-
-        <label class="main-label" for="email">Email</label>
-        <input class="main-input" id="email" type="email" name="email" required>
-
-        <label class="main-label" for="message">Mensagem</label>
-        <textarea class="main-input _textarea" id="message" name="message" required></textarea>
-
-        <button class="main-btn _btn-black" type="submit">Enviar</button>
-    </form>
+    <div id="form">
+        <form name="contact" id="section4" class="main-form" method="POST" data-netlify="true" onSubmit="submit">
+            <legend id="variation-font">Contatos</legend>
+    
+            <label class="main-label" for="name">Nome</label>
+            <input class="main-input" id="name" type="text" name="name" required>
+    
+            <label class="main-label" for="email">Email</label>
+            <input class="main-input" id="email" type="email" name="email" required>
+    
+            <label class="main-label" for="message">Mensagem</label>
+            <textarea class="main-input _textarea" id="message" name="message" required></textarea>
+    
+            <button class="main-btn _btn-black" type="submit">Enviar</button>
+        </form>
+    </div>
 
 
     <footer id="rodape">
         <a href="https://wa.me/5511915794212" target="_blank">
-            <img src="assets/img/footer/whatsapp.png" alt="Logo do WhatsApp">
+            <img class="img-fluid" src="assets/img/footer/whatsapp.png" alt="Logo do WhatsApp">
         </a>
         <a href="https://www.linkedin.com/in/eduardohenriquepina/" target="_blank">
-            <img src="assets/img/footer/linkedin.png" alt="Logo do LinkedIn">
+            <img class="img-fluid" src="assets/img/footer/linkedin.png" alt="Logo do LinkedIn">
         </a>
         <a href="https://github.com/duduike" target="_blank">
-            <img src="assets/img/footer/github.png" alt="Logo do GitHub">
+            <img class="img-fluid" src="assets/img/footer/github.png" alt="Logo do GitHub">
         </a>
     </footer>
 

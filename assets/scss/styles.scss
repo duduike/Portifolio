@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap');
 @import 'variables';
 @import 'utilities';
 @include reset;
@@ -94,15 +95,18 @@ html {
             color: $white;
             outline: none;
             background: $black;
+            box-shadow: 3px 3px 0px $white;
+        }
+        .navbar-toggler:focus{
+            box-shadow: none;
         }
 
+
         // HEADER
-
-
         
         .navbar-toggler{
             display: block;
-            background-image: url(../img/header/icon-menu.png);
+            background-image: url(/assets/img/header/icon-menu.png);
             background-repeat: no-repeat;
             background-size: auto 100%;
             text-indent: -9999px;
@@ -110,6 +114,7 @@ html {
             height: 60px;
             image-rendering: pixelated;
             border: none;
+
         }
         .navbar{
             background-color: $bg-header;
@@ -152,8 +157,9 @@ html {
         }
 
         // SONIC SECTION
+
         .background-sonic {
-            background-image: url(../img/section-1/bg-sonic.png);
+            background-image: url(/assets/img/section-1/bg-sonic.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -162,10 +168,10 @@ html {
 
             .line-break{
                 display: flex;
-                flex-direction: column;
-                margin: 140px 0 0 0;
-                align-content: center;
+                width: 40%;
                 align-items: center;
+                flex-direction: column;
+                margin: 140px auto;
                 
                 .background-tittle{
                     display: inline-flex;
@@ -205,8 +211,9 @@ html {
         }
 
         //SKILLS SECTION
+
         #background-mario {
-            background-image: url(../img/section-mario/mario425.jpg);
+            background-image: url(/assets/img/section-mario/mario425.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -227,7 +234,7 @@ html {
                 justify-content: space-between;               
                 @include mobile1024px{
                     position: relative;
-                    bottom: 115px;
+                    bottom: 158px;
                     justify-content: center;
                     gap: 25px;
                     scale: 0.6;
@@ -261,6 +268,7 @@ html {
                             width: 320px;
                         }
                         .progress-bar::-moz-progress-value {
+                            outline: 1px solid $black;
                             background-color: #4F172D;
                           }
                           
@@ -271,6 +279,7 @@ html {
                           }
                           
                           .progress-bar::-webkit-progress-value {
+                            outline: 1px solid $black;
                             background-color: #4F172D;
                           }
                           
@@ -336,6 +345,18 @@ html {
             background-color: $bg-sobre;
             color: $white;
             border-bottom: 10px solid $black;
+
+            
+            .line:after{
+                content: "";
+                position: relative;
+                display: block;
+                top: 177.2px;
+                height: 4.5px;
+                width: 85%;
+                background-color: #000;
+                margin: 0 auto;
+            }
             
             .carousel {
                 width: 100%;
@@ -381,27 +402,12 @@ html {
                     content: '';
                     position: absolute;
                     height: 0;
-                    width: 43px;
+                    width: 49px;
                     box-sizing: border-box;
                     border-top: 4.300000000000001px dashed $black;
                     transform: rotate(90deg) translate(-62%);
-                    bottom: 131px;
+                    bottom: 134px;
                   }
-            }
-
-            .carousel::after{
-                content: '';
-                position: absolute;
-                left: 65px;
-                top: 171px;
-                height: 4.2px;
-                width: 90% ;
-                background-color: $black;
-                @include mobile1024px{
-                    left: 53px;
-                    top: 170px;
-                    height: 6.2px;
-                }
             }
 
             .carousel::before{
@@ -409,7 +415,7 @@ html {
                 position: absolute;
                 box-sizing: border-box;
                 left: 0;
-                top: 171px;
+                top: 173px;
                 height: 0;  
                 width: 100%;
                 border: 2.24px dashed $black;
@@ -427,44 +433,48 @@ html {
         }
 
         //CONTACTS SECTION
-        .main-form {
+        #form{
             background-color: $bg-contatos;
-            padding: 50px 40px;
-
-            #variation-font{
-                @include font-press-400;
-                color: $white;
-            }
-            .main-label{
-                color: $white;
-                font-family: "Fira Code", Arial, Helvetica, sans-serif;
-                font-size: 30px;
-                font-weight: 300;
-                line-height: 40px;
-            }
-            .main-input {
-                margin-bottom: 20px;
-                border: 5px solid $black;
-                font-size: 30px;
-                width: 100%;
-                height: 50px;
-                box-sizing: border-box;
-                padding: 0 4px 0 4px;
-            }
-
-            ._textarea{
-                margin-bottom: 40px;
-                height: 320px;
-            }
-
-            ._btn-black{
-                background-color: $black;
-                color: $white;
-                width: 100%;
-                @include font-fira-30-300;
-            }
-            ._btn-black:hover{
-                transform: scale(1.01);
+            .main-form {
+                margin: 0 auto;
+                padding: 50px 40px;
+    
+                #variation-font{
+                    @include font-press-400;
+                    color: $white;
+                }
+                .main-label{
+                    color: $white;
+                    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+                    font-size: 30px;
+                    font-weight: 300;
+                    line-height: 40px;
+                }
+                .main-input {
+                    margin-bottom: 20px;
+                    border: 5px solid $black;
+                    outline: 0.5px solid $black;
+                    font-size: 30px;
+                    width: 100%;
+                    height: 50px;
+                    box-sizing: border-box;
+                    padding: 0 4px 0 4px;
+                }
+    
+                ._textarea{
+                    margin-bottom: 40px;
+                    height: 320px;
+                }
+    
+                ._btn-black{
+                    background-color: $black;
+                    color: $white;
+                    width: 100%;
+                    @include font-fira-30-300;
+                }
+                ._btn-black:hover{
+                    transform: scale(1.01);
+                }
             }
         }
 
@@ -477,6 +487,12 @@ html {
             padding: 20px 0 20px 0;
         }
 
+        @media(min-width: 1020px) {
+            .main-form{
+                max-width: 60%;
+            }
+        }
+
 
         @media(max-width: 768px) {
             .line-break {
@@ -487,7 +503,7 @@ html {
             }
           
             #background-mario {
-              background-image: url(../img/section-mario/mario768.jpg);
+              background-image: url(/assets/img/section-mario/mario768.jpg);
             }
           
             .wrapper-skill {
@@ -497,10 +513,6 @@ html {
               transition: ease-in-out 500ms;
             }
           
-            .carousel::after {
-              left: 38px;
-            }
-          
             .headline-skills-mario {
               margin-bottom: 0;
             }
@@ -508,7 +520,7 @@ html {
             .carousel::after {
               top: 170.9px;
               height: 4.7px;
-          
+              left: 33px;
               }
           
             article p {
@@ -521,18 +533,21 @@ html {
             body{
               min-width: 82vh;
             }
+            .carousel::after {
+                left: 31;
+              }
           
         }
           
         @media (max-width: 425px) {           
             .background-sonic{
-              background-image: url(../img/section-1/bg-sonic.png);
+              background-image: url(/assets/img/section-1/bg-sonic.png);
               background-position: bottom;
               height: 916px;
             }
             
             #background-mario {
-              background-image: url(../img/section-mario/mario425768.jpg);
+              background-image: url(/assets/img/section-mario/mario425768.jpg);
               background-position: bottom;
               height: 1181px;
             }
@@ -572,7 +587,7 @@ html {
             }
             
             .carousel::after {
-              left: 39px;
+              left: 35px;
             }  
           
             .button-cv-contatos{
@@ -596,6 +611,9 @@ html {
           }
           
         }
+
+
+
           
     }
 }

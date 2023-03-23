@@ -119,10 +119,14 @@ html body .slick-prev:hover, html body .slick-prev:focus, html body .slick-next:
   color: #FFF;
   outline: none;
   background: #000;
+  box-shadow: 3px 3px 0px #FFF;
+}
+html body .navbar-toggler:focus {
+  box-shadow: none;
 }
 html body .navbar-toggler {
   display: block;
-  background-image: url(../img/header/icon-menu.png);
+  background-image: url(/assets/img/header/icon-menu.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
   text-indent: -9999px;
@@ -169,7 +173,7 @@ html body .navbar .navbar-collapse .navbar-nav .nav-link:before {
   margin-bottom: 2px;
 }
 html body .background-sonic {
-  background-image: url(../img/section-1/bg-sonic.png);
+  background-image: url(/assets/img/section-1/bg-sonic.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,10 +182,10 @@ html body .background-sonic {
 }
 html body .background-sonic .line-break {
   display: flex;
-  flex-direction: column;
-  margin: 140px 0 0 0;
-  align-content: center;
+  width: 40%;
   align-items: center;
+  flex-direction: column;
+  margin: 140px auto;
 }
 html body .background-sonic .line-break .background-tittle {
   display: inline-flex;
@@ -223,7 +227,7 @@ html body .background-sonic .line-break .button-cv-contatos a {
   width: 172px;
 }
 html body #background-mario {
-  background-image: url(../img/section-mario/mario425.jpg);
+  background-image: url(/assets/img/section-mario/mario425.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -250,7 +254,7 @@ html body #background-mario .wrapper-skill {
 @media (max-width: 1024px) {
   html body #background-mario .wrapper-skill {
     position: relative;
-    bottom: 115px;
+    bottom: 158px;
     justify-content: center;
     gap: 25px;
     scale: 0.6;
@@ -286,6 +290,7 @@ html body #background-mario .wrapper-skill .skills .right .progress-bar {
   width: 320px;
 }
 html body #background-mario .wrapper-skill .skills .right .progress-bar::-moz-progress-value {
+  outline: 1px solid #000;
   background-color: #4F172D;
 }
 html body #background-mario .wrapper-skill .skills .right .progress-bar::-moz-progress-bar {
@@ -294,6 +299,7 @@ html body #background-mario .wrapper-skill .skills .right .progress-bar::-moz-pr
   outline: 3px solid #000;
 }
 html body #background-mario .wrapper-skill .skills .right .progress-bar::-webkit-progress-value {
+  outline: 1px solid #000;
   background-color: #4F172D;
 }
 html body #background-mario .wrapper-skill .skills .right .progress-bar::-webkit-progress-bar {
@@ -345,6 +351,16 @@ html body .background-sobre {
   color: #FFF;
   border-bottom: 10px solid #000;
 }
+html body .background-sobre .line:after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 177.2px;
+  height: 4.5px;
+  width: 85%;
+  background-color: #000;
+  margin: 0 auto;
+}
 html body .background-sobre .carousel {
   width: 100%;
   margin-left: auto;
@@ -385,34 +401,18 @@ html body .background-sobre .carousel .node-card::before {
   content: "";
   position: absolute;
   height: 0;
-  width: 43px;
+  width: 49px;
   box-sizing: border-box;
   border-top: 4.3px dashed #000;
   transform: rotate(90deg) translate(-62%);
-  bottom: 131px;
-}
-html body .background-sobre .carousel::after {
-  content: "";
-  position: absolute;
-  left: 65px;
-  top: 171px;
-  height: 4.2px;
-  width: 90%;
-  background-color: #000;
-}
-@media (max-width: 1024px) {
-  html body .background-sobre .carousel::after {
-    left: 53px;
-    top: 170px;
-    height: 6.2px;
-  }
+  bottom: 134px;
 }
 html body .background-sobre .carousel::before {
   content: "";
   position: absolute;
   box-sizing: border-box;
   left: 0;
-  top: 171px;
+  top: 173px;
   height: 0;
   width: 100%;
   border: 2.24px dashed #000;
@@ -428,11 +428,14 @@ html body .background-sobre article p {
   margin-right: auto;
   margin-bottom: 50px;
 }
-html body .main-form {
+html body #form {
   background-color: #4F172D;
+}
+html body #form .main-form {
+  margin: 0 auto;
   padding: 50px 40px;
 }
-html body .main-form #variation-font {
+html body #form .main-form #variation-font {
   font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -440,27 +443,28 @@ html body .main-form #variation-font {
   padding-top: 50px;
   color: #FFF;
 }
-html body .main-form .main-label {
+html body #form .main-form .main-label {
   color: #FFF;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 300;
   line-height: 40px;
 }
-html body .main-form .main-input {
+html body #form .main-form .main-input {
   margin-bottom: 20px;
   border: 5px solid #000;
+  outline: 0.5px solid #000;
   font-size: 30px;
   width: 100%;
   height: 50px;
   box-sizing: border-box;
   padding: 0 4px 0 4px;
 }
-html body .main-form ._textarea {
+html body #form .main-form ._textarea {
   margin-bottom: 40px;
   height: 320px;
 }
-html body .main-form ._btn-black {
+html body #form .main-form ._btn-black {
   background-color: #000;
   color: #FFF;
   width: 100%;
@@ -470,7 +474,7 @@ html body .main-form ._btn-black {
   text-decoration: none;
   color: #FFF;
 }
-html body .main-form ._btn-black:hover {
+html body #form .main-form ._btn-black:hover {
   transform: scale(1.01);
 }
 html body #rodape {
@@ -480,6 +484,11 @@ html body #rodape {
   gap: 40px;
   padding: 20px 0 20px 0;
 }
+@media (min-width: 1020px) {
+  html body .main-form {
+    max-width: 60%;
+  }
+}
 @media (max-width: 768px) {
   html body .line-break {
     display: flex;
@@ -488,7 +497,7 @@ html body #rodape {
     transition: ease-in-out 500ms;
   }
   html body #background-mario {
-    background-image: url(../img/section-mario/mario768.jpg);
+    background-image: url(/assets/img/section-mario/mario768.jpg);
   }
   html body .wrapper-skill {
     position: relative;
@@ -496,15 +505,13 @@ html body #rodape {
     scale: 0.5;
     transition: ease-in-out 500ms;
   }
-  html body .carousel::after {
-    left: 38px;
-  }
   html body .headline-skills-mario {
     margin-bottom: 0;
   }
   html body .carousel::after {
     top: 170.9px;
     height: 4.7px;
+    left: 33px;
   }
   html body article p {
     max-width: 653px;
@@ -514,15 +521,18 @@ html body #rodape {
   html body body {
     min-width: 82vh;
   }
+  html body .carousel::after {
+    left: 31;
+  }
 }
 @media (max-width: 425px) {
   html body .background-sonic {
-    background-image: url(../img/section-1/bg-sonic.png);
+    background-image: url(/assets/img/section-1/bg-sonic.png);
     background-position: bottom;
     height: 916px;
   }
   html body #background-mario {
-    background-image: url(../img/section-mario/mario425768.jpg);
+    background-image: url(/assets/img/section-mario/mario425768.jpg);
     background-position: bottom;
     height: 1181px;
   }
@@ -554,7 +564,7 @@ html body #rodape {
     font-size: 35px;
   }
   html body .carousel::after {
-    left: 39px;
+    left: 35px;
   }
   html body .button-cv-contatos {
     gap: 0;
