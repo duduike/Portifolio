@@ -106,7 +106,7 @@ html {
         
         .navbar-toggler{
             display: block;
-            background-image: url(/assets/img/header/icon-menu.png);
+            background-image: url(../../img/header/icon-menu.png);
             background-repeat: no-repeat;
             background-size: auto 100%;
             text-indent: -9999px;
@@ -159,7 +159,7 @@ html {
         // SONIC SECTION
 
         .background-sonic {
-            background-image: url(/assets/img/section-1/bg-sonic.png);
+            background-image: url(../../img/section-1/bg-sonic.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -213,7 +213,7 @@ html {
         //SKILLS SECTION
 
         #background-mario {
-            background-image: url(/assets/img/section-mario/mario425.jpg);
+            background-image: url(../../img/section-mario/mario425.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -504,7 +504,7 @@ html {
             }
           
             #background-mario {
-              background-image: url(/assets/img/section-mario/mario768.jpg);
+              background-image: url(../../img/section-mario/mario768.jpg);
             }
           
             .wrapper-skill {
@@ -532,13 +532,13 @@ html {
           
         @media (max-width: 425px) {           
             .background-sonic{
-              background-image: url(/assets/img/section-1/bg-sonic.png);
+              background-image: url(../../img/section-1/bg-sonic.png);
               background-position: bottom;
               height: 916px;
             }
             
             #background-mario {
-              background-image: url(/assets/img/section-mario/mario425768.jpg);
+              background-image: url(../../img/section-mario/mario425768.jpg);
               background-position: bottom;
               height: 1181px;
             }
