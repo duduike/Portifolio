@@ -508,11 +508,6 @@ html body #rodape {
   html body .headline-skills-mario {
     margin-bottom: 0;
   }
-  html body .carousel::after {
-    top: 170.9px;
-    height: 4.7px;
-    left: 33px;
-  }
   html body article p {
     max-width: 653px;
   }
@@ -520,9 +515,6 @@ html body #rodape {
 @media (max-width: 576px) {
   html body body {
     min-width: 82vh;
-  }
-  html body .carousel::after {
-    left: 31;
   }
 }
 @media (max-width: 425px) {
@@ -545,12 +537,6 @@ html body #rodape {
   html body .button-downloadcv {
     margin: 20px 20px 20px 20px;
   }
-  html body .font-fira-20-500 {
-    font-size: 30px;
-  }
-  html body .font-fira-30-300 {
-    font-size: 30px;
-  }
   html body .line-break {
     display: flex;
     margin: 130px 0 0 0px;
@@ -563,21 +549,12 @@ html body #rodape {
   html body .background-tittle h2 {
     font-size: 35px;
   }
-  html body .carousel::after {
-    left: 35px;
-  }
   html body .button-cv-contatos {
     gap: 0;
     margin-top: 0;
   }
   html body .button-cv-contatos a {
     width: 239px;
-  }
-  html body .carousel::after {
-    width: 85%;
-    left: 53px;
-    top: 170px;
-    height: 6.2px;
   }
   html body article p {
     max-width: 572px;
