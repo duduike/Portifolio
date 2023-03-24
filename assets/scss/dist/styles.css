@@ -126,7 +126,7 @@ html body .navbar-toggler:focus {
 }
 html body .navbar-toggler {
   display: block;
-  background-image: url(/assets/img/header/icon-menu.png);
+  background-image: url(../../img/header/icon-menu.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
   text-indent: -9999px;
@@ -173,7 +173,7 @@ html body .navbar .navbar-collapse .navbar-nav .nav-link:before {
   margin-bottom: 2px;
 }
 html body .background-sonic {
-  background-image: url(/assets/img/section-1/bg-sonic.png);
+  background-image: url(../../img/section-1/bg-sonic.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,7 +227,7 @@ html body .background-sonic .line-break .button-cv-contatos a {
   width: 172px;
 }
 html body #background-mario {
-  background-image: url(/assets/img/section-mario/mario425.jpg);
+  background-image: url(../../img/section-mario/mario425.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -497,7 +497,7 @@ html body #rodape {
     transition: ease-in-out 500ms;
   }
   html body #background-mario {
-    background-image: url(/assets/img/section-mario/mario768.jpg);
+    background-image: url(../../img/section-mario/mario768.jpg);
   }
   html body .wrapper-skill {
     position: relative;
@@ -519,12 +519,12 @@ html body #rodape {
 }
 @media (max-width: 425px) {
   html body .background-sonic {
-    background-image: url(/assets/img/section-1/bg-sonic.png);
+    background-image: url(../../img/section-1/bg-sonic.png);
     background-position: bottom;
     height: 916px;
   }
   html body #background-mario {
-    background-image: url(/assets/img/section-mario/mario425768.jpg);
+    background-image: url(../../img/section-mario/mario425768.jpg);
     background-position: bottom;
     height: 1181px;
   }
