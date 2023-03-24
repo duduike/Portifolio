@@ -487,6 +487,7 @@ html {
             padding: 20px 0 20px 0;
         }
 
+        //MEDIA QUERY
         @media(min-width: 1020px) {
             .main-form{
                 max-width: 60%;
@@ -517,12 +518,6 @@ html {
               margin-bottom: 0;
             }
           
-            .carousel::after {
-              top: 170.9px;
-              height: 4.7px;
-              left: 33px;
-              }
-          
             article p {
               max-width: 653px;
             }
@@ -533,10 +528,6 @@ html {
             body{
               min-width: 82vh;
             }
-            .carousel::after {
-                left: 31;
-              }
-          
         }
           
         @media (max-width: 425px) {           
@@ -563,14 +554,6 @@ html {
               margin: 20px 20px 20px 20px;
             }
             
-            .font-fira-20-500 {
-              font-size: 30px;
-            }  
-            
-            .font-fira-30-300 {
-              font-size: 30px;
-            }
-            
             .line-break{
               display: flex;
               margin: 130px 0 0 0px;
@@ -585,10 +568,6 @@ html {
             .background-tittle h2 {
               font-size: 35px;  
             }
-            
-            .carousel::after {
-              left: 35px;
-            }  
           
             .button-cv-contatos{
               gap: 0;
@@ -599,21 +578,10 @@ html {
               width: 239px;
             }
           
-            .carousel::after {
-              width: 85%;
-              left: 53px;
-              top: 170px;
-              height: 6.2px;
-          }
-          
           article p {
             max-width: 572px;
           }
           
         }
-
-
-
-          
     }
 }
