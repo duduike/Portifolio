@@ -148,7 +148,7 @@ html body .navbar .navbar-collapse {
   justify-content: flex-end;
 }
 html body .navbar .navbar-collapse .navbar-nav {
-  align-items: center;
+  align-items: flex-start;
 }
 html body .navbar .navbar-collapse .navbar-nav ._download-header-btn {
   padding-left: 20px;
@@ -185,7 +185,7 @@ html body .background-sonic .line-break {
   width: 40%;
   align-items: center;
   flex-direction: column;
-  margin: 140px auto;
+  margin: 100px auto;
 }
 html body .background-sonic .line-break .background-tittle {
   display: inline-flex;
@@ -314,7 +314,6 @@ html body #background-mario .wrapper-skill .skills .right .progress-bar::-webkit
 }
 html body #background-projeto {
   background-color: #000;
-  height: 90vh;
   text-align: center;
   border-bottom: 10px solid #3a4042;
 }
@@ -342,6 +341,7 @@ html body #background-projeto .project-one legend {
 }
 html body #background-projeto .project-one p {
   font-size: 20px;
+  margin-bottom: 3rem;
 }
 html body .background-sobre {
   display: flex;
@@ -530,7 +530,7 @@ html body #rodape {
   }
   html body .wrapper-skill {
     position: relative;
-    top: 65px;
+    top: 24px;
     scale: 0.8;
     transition: ease-in-out 500ms;
   }

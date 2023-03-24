@@ -130,7 +130,7 @@ html {
                 justify-content: flex-end;
     
                 .navbar-nav{
-                    align-items: center;
+                    align-items: flex-start;
                    
                     ._download-header-btn {
                         padding-left: 20px;
@@ -171,7 +171,7 @@ html {
                 width: 40%;
                 align-items: center;
                 flex-direction: column;
-                margin: 140px auto;
+                margin: 100px auto;
                 
                 .background-tittle{
                     display: inline-flex;
@@ -302,7 +302,6 @@ html {
         //PROJETOS SECTION
         #background-projeto{
             background-color: $black;
-            height: 90vh;
             text-align: center;
             border-bottom: 10px solid #3a4042;
 
@@ -332,6 +331,7 @@ html {
     
                 p {
                     font-size: 20px;
+                    margin-bottom: 3rem;
                 }
             }
 
@@ -545,7 +545,7 @@ html {
           
             .wrapper-skill {
               position: relative;
-              top: 65px;
+              top: 24px;
               scale: 0.8;
               transition: ease-in-out 500ms;
             }
