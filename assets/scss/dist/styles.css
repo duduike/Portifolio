@@ -148,12 +148,12 @@ html body .navbar .navbar-collapse {
   justify-content: flex-end;
 }
 html body .navbar .navbar-collapse .navbar-nav {
-  align-items: flex-start;
+  align-items: baseline;
 }
 html body .navbar .navbar-collapse .navbar-nav ._download-header-btn {
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 20px;
+  margin: 10px 20px 10px 0;
 }
 html body .navbar .navbar-collapse .navbar-nav .nav-link {
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
@@ -171,6 +171,13 @@ html body .navbar .navbar-collapse .navbar-nav .nav-link:before {
   height: 10px;
   margin-right: 10px;
   margin-bottom: 2px;
+}
+@media (max-width: 992px) {
+  html body .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
 }
 html body .background-sonic {
   background-image: url(../../img/section-1/bg-sonic.png);
@@ -262,11 +269,10 @@ html body #background-mario .wrapper-skill {
 }
 @media (max-width: 1024px) {
   html body #background-mario .wrapper-skill {
-    position: relative;
-    bottom: 158px;
     justify-content: center;
     gap: 25px;
-    scale: 0.6;
+    transform: translateY(-141px);
+    scale: 0.7;
   }
 }
 html body #background-mario .wrapper-skill .skills {
