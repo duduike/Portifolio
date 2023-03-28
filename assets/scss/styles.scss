@@ -130,12 +130,12 @@ html {
                 justify-content: flex-end;
     
                 .navbar-nav{
-                    align-items: flex-start;
+                    align-items: baseline;
                    
                     ._download-header-btn {
                         padding-left: 20px;
                         padding-right: 20px;
-                        margin-right: 20px;
+                        margin: 10px 20px 10px 0;
                     }
     
                     .nav-link{
@@ -153,6 +153,13 @@ html {
                         margin-bottom: 2px;
                       }
                 }
+            }
+        }
+        @media (max-width:992px) {
+            .navbar{
+                position: fixed;
+                width: 100%;
+                z-index: 999;
             }
         }
 
@@ -242,11 +249,10 @@ html {
                 margin: 0 auto;
                 justify-content: space-between;               
                 @include mobile1024px{
-                    position: relative;
-                    bottom: 158px;
                     justify-content: center;
                     gap: 25px;
-                    scale: 0.6;
+                    transform: translateY(-141px);
+                    scale: 0.7;
                 }
 
                 .skills{
