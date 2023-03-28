@@ -168,7 +168,6 @@ html {
 
             .line-break{
                 display: flex;
-                width: 40%;
                 align-items: center;
                 flex-direction: column;
                 margin: 100px auto;
@@ -186,6 +185,11 @@ html {
                         color: $headline;
                         text-shadow: 4px 4px 0px $black;
                         padding: 46px 74px 0px 73px;
+                    }
+                    @media (max-width: 576px){
+                        .headline{
+                            padding: 46px 30px 0px 30px;
+                        }
                     }
                     
                     .subtittle{
@@ -206,6 +210,11 @@ html {
                     a{
                         width: 172px;
                     }
+                }
+                @media (max-width: 576px){
+                    .button-cv-contatos{
+                        gap: 21px;
+                        }
                 }
             }
         }
@@ -518,17 +527,9 @@ html {
               margin-bottom: 0;
             }
           
-            article p {
-              max-width: 653px;
-            }
-          
         } 
 
-        @media (max-width: 576px){
-            body{
-              min-width: 82vh;
-            }
-        }
+
           
         @media (max-width: 425px) {           
             .background-sonic{
@@ -569,19 +570,7 @@ html {
               font-size: 35px;  
             }
           
-            .button-cv-contatos{
-              gap: 0;
-              margin-top: 0;
-            }
-            
-            .button-cv-contatos a {
-              width: 239px;
-            }
-          
-          article p {
-            max-width: 572px;
-          }
-          
+
         }
     }
 }

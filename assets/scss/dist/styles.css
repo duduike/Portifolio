@@ -182,7 +182,6 @@ html body .background-sonic {
 }
 html body .background-sonic .line-break {
   display: flex;
-  width: 40%;
   align-items: center;
   flex-direction: column;
   margin: 100px auto;
@@ -205,6 +204,11 @@ html body .background-sonic .line-break .background-tittle .headline {
   text-shadow: 4px 4px 0px #000;
   padding: 46px 74px 0px 73px;
 }
+@media (max-width: 576px) {
+  html body .background-sonic .line-break .background-tittle .headline {
+    padding: 46px 30px 0px 30px;
+  }
+}
 html body .background-sonic .line-break .background-tittle .subtittle {
   font-family: "Press Start 2P", cursive, Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -225,6 +229,11 @@ html body .background-sonic .line-break .button-cv-contatos {
 }
 html body .background-sonic .line-break .button-cv-contatos a {
   width: 172px;
+}
+@media (max-width: 576px) {
+  html body .background-sonic .line-break .button-cv-contatos {
+    gap: 21px;
+  }
 }
 html body #background-mario {
   background-image: url(../../img/section-mario/mario425.jpg);
@@ -508,14 +517,6 @@ html body #rodape {
   html body .headline-skills-mario {
     margin-bottom: 0;
   }
-  html body article p {
-    max-width: 653px;
-  }
-}
-@media (max-width: 576px) {
-  html body body {
-    min-width: 82vh;
-  }
 }
 @media (max-width: 425px) {
   html body .background-sonic {
@@ -549,16 +550,4 @@ html body #rodape {
   html body .background-tittle h2 {
     font-size: 35px;
   }
-  html body .button-cv-contatos {
-    gap: 0;
-    margin-top: 0;
-  }
-  html body .button-cv-contatos a {
-    width: 239px;
-  }
-  html body article p {
-    max-width: 572px;
-  }
 }
-
-/*# sourceMappingURL=styles.css.map */
