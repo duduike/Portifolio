@@ -3,11 +3,19 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=400, maximum-scale=1" />
-    <meta name="description" content="Eduardo Pina | Front-End">
+    <meta name="viewport" content="width=400, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <title>
         Eduardo Pina - Portifólio
     </title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Site portifólio do Eduardo Pina Front-End">
+    <meta name="author" content="Eduardo Henrique Araújo Perez Pina">
+    <meta name="keywords" content="Eduardo Pina, Front-End, Web developer, portifólio, HTML5, CSS3, JavaScript, SASS, SCSS">
+    <link rel="canonical" href="https://dev-eduardo-pina.netlify.app">
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -18,6 +26,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/scss/dist/styles.css">
+
 </head>
 
 <body>
@@ -127,12 +136,21 @@
     <!-- PROJETOS SECTION -->
     <div id="background-projeto">
         <h2 class="headline-white">Projetos</h2>
-        <div class="project-one">
-            <a href="index.html">
-                <img class="meu-portifolio " src="assets/img/section-1/logopbv280px.jpg" alt="Meu projeto">
-            </a>
-            <legend>Meu Portifólio</legend>
-            <p>Foi o primeiro projeto que desenvolvi e utilizei: HTML5, CSS3, JavaScript, SCSS e Bootstrap</p>
+
+        <div class="projects">
+            <div class="card" style="width: 18rem;">
+                <a href="#">
+                    <img src="assets/img/section-1/logopbv280px.jpg" class="card-img-top" alt="Eduardo Pina logo">
+                </a>
+                <div class="card-body">
+                    <legend>Meu Portifólio</legend>
+                    <p class="card-text">Foi o primeiro projeto que desenvolvi e utilizei: HTML5, CSS3, JavaScript, SCSS e Bootstrap</p>
+                    <a class="d-flex justify-content-center align-items-center" href="https://github.com/duduike/Portifolio" target="_blank" style="gap:1rem">
+                        <span>GitHub:</span>
+                        <img src="assets/img/footer/github.png" alt="Logo do GitHub">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -203,7 +221,7 @@
 
     <div id="form">
         <form name="contact" id="section4" class="main-form" method="POST" data-netlify="true" onSubmit="submit">
-            <legend id="variation-font">Contatos</legend>
+            <legend id="variation-font" style="margin-bottom: 3rem;">Contatos</legend>
     
             <label class="main-label" for="name">Nome</label>
             <input class="main-input" id="name" type="text" name="name" required>

@@ -5,6 +5,7 @@
 
 html {
     body{
+        overflow-x: hidden !important;
         // CLASSES REUTILIZAVEIS
         .main-btn{
             @include btn-padrao;
@@ -224,12 +225,20 @@ html {
                         }
                 }
             }
+            @media(max-width: 768px) {
+                .line-break {
+                  display: flex;
+                  margin: 130px 0 0 0px;
+                  scale: 0.8;
+                  transition: ease-in-out 500ms;
+                }
+            }
         }
 
         //SKILLS SECTION
 
         #background-mario {
-            background-image: url(../../img/section-mario/mario425.jpg);
+            background-image: url(../../img/section-mario/mario768.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -320,36 +329,37 @@ html {
             text-align: center;
             border-bottom: 10px solid #3a4042;
 
+            .projects{
+                overflow: auto;
+                display: flex;
+                justify-content: center;
+                scroll-snap-type: x mandatory;
+                gap: 1rem;
+                margin: 5rem 0;
+                
+                .card{
+                    flex-shrink: 0;
+                    scroll-snap-align: center;
+                    border: 2px solid $white;
+                    
 
-            .project-one{
-                width: 281px;
-                margin: 0 auto;
-
-                a {
-                    .meu-portifolio {
-                        background-size: auto;
-                        height: 280px;
-                        width: 280px;
-                        margin: 70px 0 20px 0;
-                        border: none;
-                        box-shadow: 5px 5px 0 $white;
+                    .card-body {
+                        background-color: $black;
+    
+                        legend, p {
+                            @include font-fira-30-300;
+                        }
+    
+                        legend {
+                            color: $bg-header;
+                        }
+    
+                        .card-text{
+                            font-size: 20px;
+                        }
                     }
                 }
-    
-                legend, p {
-                    @include font-fira-30-300;
-                }
-
-                legend{
-                    color: $bg-header;
-                }
-    
-                p {
-                    font-size: 20px;
-                    margin-bottom: 3rem;
-                }
             }
-
         }
 
         //ABOUT ME SECTION
@@ -368,6 +378,7 @@ html {
                 display: block;
                 top: 177.2px;
                 height: 4.5px;
+                overflow-x: hidden;
                 width: 85%;
                 background-color: #000;
                 margin: 0 auto;
@@ -434,6 +445,7 @@ html {
                 height: 0;  
                 width: 100%;
                 border: 2.24px dashed $black;
+                overflow-x: hidden;
             }
 
             article {
@@ -491,6 +503,11 @@ html {
                     transform: scale(1.01);
                 }
             }
+            @media(min-width: 1020px) {
+                .main-form{
+                    max-width: 60%;
+                }
+            }
         }
 
         //FOOTER
@@ -503,14 +520,18 @@ html {
         }
 
         //MEDIA QUERY
-        @media(min-width: 1020px) {
-            .main-form{
-                max-width: 60%;
-            }
+
+        @media(min-width: 1589px) {
+            .wrapper-skill {
+            position: relative;
+            bottom: 65px;
+            scale: 0.8;
+            transition: ease-in-out 500ms;
+          }
         }
 
 
-        @media(max-width: 768px) {
+        @media(max-width: 885px) {
             .line-break {
               display: flex;
               margin: 130px 0 0 0px;
@@ -557,13 +578,9 @@ html {
               transition: ease-in-out 500ms;
             }
             
-            .button-downloadcv{
-              margin: 20px 20px 20px 20px;
-            }
-            
             .line-break{
               display: flex;
-              margin: 130px 0 0 0px;
+              margin: 130px 0 0 0;
               scale: 0.8;
               transition: ease-in-out 500ms;
             }
