@@ -21,6 +21,9 @@ h1 {
   text-indent: -9000px;
 }
 
+html body {
+  overflow-x: hidden !important;
+}
 html body .main-btn {
   display: flex;
   justify-content: center;
@@ -242,8 +245,16 @@ html body .background-sonic .line-break .button-cv-contatos a {
     gap: 21px;
   }
 }
+@media (max-width: 768px) {
+  html body .background-sonic .line-break {
+    display: flex;
+    margin: 130px 0 0 0px;
+    scale: 0.8;
+    transition: ease-in-out 500ms;
+  }
+}
 html body #background-mario {
-  background-image: url(../../img/section-mario/mario425.jpg);
+  background-image: url(../../img/section-mario/mario768.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -332,31 +343,34 @@ html body #background-projeto {
   text-align: center;
   border-bottom: 10px solid #3a4042;
 }
-html body #background-projeto .project-one {
-  width: 281px;
-  margin: 0 auto;
+html body #background-projeto .projects {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  margin: 5rem 0;
 }
-html body #background-projeto .project-one a .meu-portifolio {
-  background-size: auto;
-  height: 280px;
-  width: 280px;
-  margin: 70px 0 20px 0;
-  border: none;
-  box-shadow: 5px 5px 0 #FFF;
+html body #background-projeto .projects .card {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border: 2px solid #FFF;
 }
-html body #background-projeto .project-one legend, html body #background-projeto .project-one p {
+html body #background-projeto .projects .card .card-body {
+  background-color: #000;
+}
+html body #background-projeto .projects .card .card-body legend, html body #background-projeto .projects .card .card-body p {
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 300;
   text-decoration: none;
   color: #FFF;
 }
-html body #background-projeto .project-one legend {
+html body #background-projeto .projects .card .card-body legend {
   color: #0085ff;
 }
-html body #background-projeto .project-one p {
+html body #background-projeto .projects .card .card-body .card-text {
   font-size: 20px;
-  margin-bottom: 3rem;
 }
 html body .background-sobre {
   display: flex;
@@ -372,6 +386,7 @@ html body .background-sobre .line:after {
   display: block;
   top: 177.2px;
   height: 4.5px;
+  overflow-x: hidden;
   width: 85%;
   background-color: #000;
   margin: 0 auto;
@@ -431,6 +446,7 @@ html body .background-sobre .carousel::before {
   height: 0;
   width: 100%;
   border: 2.24px dashed #000;
+  overflow-x: hidden;
 }
 html body .background-sobre article p {
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
@@ -492,6 +508,11 @@ html body #form .main-form ._btn-black {
 html body #form .main-form ._btn-black:hover {
   transform: scale(1.01);
 }
+@media (min-width: 1020px) {
+  html body #form .main-form {
+    max-width: 60%;
+  }
+}
 html body #rodape {
   display: flex;
   justify-content: center;
@@ -499,12 +520,15 @@ html body #rodape {
   gap: 40px;
   padding: 20px 0 20px 0;
 }
-@media (min-width: 1020px) {
-  html body .main-form {
-    max-width: 60%;
+@media (min-width: 1589px) {
+  html body .wrapper-skill {
+    position: relative;
+    bottom: 65px;
+    scale: 0.8;
+    transition: ease-in-out 500ms;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 885px) {
   html body .line-break {
     display: flex;
     margin: 130px 0 0 0px;
@@ -541,12 +565,9 @@ html body #rodape {
     scale: 0.8;
     transition: ease-in-out 500ms;
   }
-  html body .button-downloadcv {
-    margin: 20px 20px 20px 20px;
-  }
   html body .line-break {
     display: flex;
-    margin: 130px 0 0 0px;
+    margin: 130px 0 0 0;
     scale: 0.8;
     transition: ease-in-out 500ms;
   }
